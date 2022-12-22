@@ -1,0 +1,36 @@
+.product {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.product-label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-black-main);
+  margin-bottom: 12px;
+  @include tablet {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  @include desktop {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+.product-title {
+  color: var(--color-black-main);
+}
+.product-list {
+}
+.product-item {
+}
+.product-card {
+}
+.product-card__title {
+}
+.product-card__description {
+}
+.product-button {
+}

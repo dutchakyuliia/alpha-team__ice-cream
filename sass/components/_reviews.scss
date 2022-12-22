@@ -1,0 +1,33 @@
+.reviews {
+  padding-bottom: 393px;
+  background-color: var(--primary-white-color);
+  background-image: url(../../images/Backgroud_mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Backgroud_mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../images/background-dekstop.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-dekstop@2x.jpg);
+    }
+  }
+}

@@ -157,8 +157,12 @@
     </svg>
   </button>
   <h3 class="modal-title">Our Locations</h3>
-
-  <a href="#">open map</a>
+  <picture>
+    <source srcset="./images/modals/map-tab-desk.jpg 1x, ./images/modals/map-tab-desk-2x.jpg 2x" media="(min-width: 768px)">
+    <source srcset="./images/modals/map-mob.jpg 1x, ./images/modals/map-mob-2x.jpg 2x" media="(max-width: 767px)">
+    <img class="location-foto" src="./images/modals/map-tab-desk.jpg" alt="map" width="224">
+  </picture>
+  <a href="#" class="location-link">open map</a>
 </div>
 <div class="modal-franchise modal-container">
   <button type="button" class="button-close">

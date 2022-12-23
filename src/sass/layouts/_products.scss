@@ -43,16 +43,37 @@
 }
 .product-item {
   flex-basis: 100%;
+  min-height: 528px;
+  display: flex;
+  align-items: flex-end;
   @include tablet {
     flex-basis: calc((100% - 2 * 16px) / 3);
+    min-height: 548px;
   }
   @include desktop {
     flex-basis: calc((100% - 2 * 29px) / 3);
+    min-height: 719px;
   }
 }
 .product-card {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 420px;
+  @include tablet {
+    padding-top: 108px;
+    padding-left: 26px;
+    padding-right: 26px;
+    min-height: 428px;
+  }
+  @include desktop {
+    padding-top: 165px;
+    padding-left: 64px;
+    padding-right: 64px;
+    min-height: 536px;
+  }
 
   &--ice-cream {
     background-color: var(--green-product);
@@ -79,17 +100,9 @@
   font-size: 14px;
   line-height: calc(25 / 14);
   letter-spacing: 0.04em;
-  padding-left: 40px;
-  padding-right: 40px;
-  @include tablet {
-    padding-left: 26px;
-    padding-right: 26px;
-  }
   @include desktop {
     font-size: 16px;
     line-height: calc(28 / 16);
-    padding-left: 64px;
-    padding-right: 64px;
   }
 }
 .product-button {

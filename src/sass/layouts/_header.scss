@@ -112,7 +112,7 @@
 
   @media screen and (min-width: 768px) {
     top: 20px;
-    left: 32px;
+    left: 29px;
   }
 }
 
@@ -210,6 +210,8 @@
 }
 
 .menu-open {
+  transform: translateX(0);
+  opacity: 1;
   @media screen and (min-width: 768px) {
     top: 29px;
     right: 216px;
@@ -239,19 +241,6 @@
 
   overflow: auto;
 
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-  // background-color: var(--bg-mobile-menu);
-  // padding: 48px 40px;
-  // display: flex;
-  // flex-direction: column;
-  // transform: translateX(-100%);
-  // opacity: 0;
-  // z-index: 10;
-
   @media screen and (min-width: 768px) {
     background-color: var(--bg-tablet);
   }
@@ -261,12 +250,6 @@
   }
 }
 
-// .mob-menu.is-hidden {
-//   opacity: 1;
-//   transform: translateX(0);
-//   visibility: hidden;
-//   pointer-events: none;
-// }
 .header-nav {
   margin-top: 32px;
   display: flex;

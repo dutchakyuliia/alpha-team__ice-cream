@@ -1,0 +1,68 @@
+.about {
+  padding-top: 61px;
+  padding-bottom: 64px;
+  background-color: #84a178;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 204px;
+  }
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 178px;
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--color-white-main);
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &-title {
+    margin-bottom: 32px;
+    width: 210px;
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section-title {
+}
+.about-img {
+}
+.about-text-upper {
+}
+.about-text-lower {
+}
+.btn {
+}
+.about-benefits {
+}
+.about-benefits-item {
+}
+.about-benefits-icon {
+}
+.about-benefits-span {
+}
+.about-benefits-text {
+}
+.about-item {
+}

@@ -1,48 +1,62 @@
-<section class="about container">
-    <label class="about-label">
-        <span class="about-label-text">tradition and love</span>
-        <h2 class="about-title section-title">how it’s made?</h2>
-    </label>
-    <div class="about-item">
-        <img class="about-img" src="./images/about/cow-mob-min.png" alt="Cow">
+<section class="about">
+    <div class="about-container container">
+        <label class="about-label">
+            <span class="about-label-text">tradition and love</span>
+            <h2 class="about-title section-title">how it’s made?</h2>
+        </label>
+        <div class="about-item">
+            <picture>
+                <source srcset="./images/about/cow-desk-min.png 1x, ./images/about/cow-desk-2x-min.png 2x"
+                    media="(min-width: 1200px)" />
+                <source srcset="./images/about/cow-tab-min.png 1x, ./images/about/cow-tab-2x-min.png 2x"
+                    media="(min-width: 768px)" />
+                <source srcset="./images/about/cow-mob-min.png 1x, ./images/about/cow-mob-2x-min.png 2x"
+                    media="(max-width: 767px)" />
+                <img src="./images/about/cow-mob-min.png" alt="Cow">
+            </picture>
 
-        <div>
-            <p class="about-text-upper">Ice is a place where you will become not only a little happier, but also
-                healthier.
-                Health is the main value for us, and
-                we follow it when creating our handmade desserts.</p>
-            <p class="about-text-lower">We use traditional recipes and 100% natural ingredients. Our products are so
-                natural
-                that they can be given to children
-                from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
-                milkshakes.</p>
+            <div class="about-text">
+                <p class="about-text-upper">Ice is a place where you will become not only a little happier, but also
+                    healthier.
+                    Health is the main value for us, and
+                    we follow it when creating our handmade desserts.</p>
+                <p class="about-text-middle">We use traditional recipes and 100% natural ingredients. Our products are
+                    so
+                    natural
+                    that they can be given to children
+                    from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and
+                    23
+                    milkshakes.</p>
+                <p class="about-text-lower">his is enough to choose ice cream and coffee for any mood!</p>
 
 
-            <button class="btn" type="button" data-modal-open>read more</button>
+                <button class="btn" type="button" data-modal-open>read more</button>
+            </div>
         </div>
+
+        <ul class="about-benefits">
+            <li class="about-benefits-item">
+                <svg class="about-benefits-icon" width="50" height="50">
+                    <use href="./images/icons.svg#icon-close"> </use>
+                </svg>
+                <span class="about-benefits-span"></span>
+                <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+
+            </li>
+            <li class="about-item"><svg class="about-benefits-icon" width="50" height="50">
+                    <use href="./images/icons.svg#icon-close"> </use>
+                </svg>
+                <span class="about-benefits-span"></span>
+                <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class="about-item"><svg class="about-benefits-icon" width="50" height="50">
+                    <use href="./images/icons.svg#icon-close"> </use>
+                </svg>
+                <span class="about-benefits-span"></span>
+                <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+
+        </ul>
     </div>
 
-    <ul class="about-benefits">
-        <li class="about-benefits-item">
-            <svg class="about-benefits-icon" width="50" height="50">
-                <use href="./images/icons.svg#icon-close"> </use>
-            </svg>
-            <span class="about-benefits-span"></span>
-            <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-
-        </li>
-        <li class="about-item"><svg class="about-benefits-icon" width="50" height="50">
-                <use href="./images/icons.svg#icon-close"> </use>
-            </svg>
-            <span class="about-benefits-span"></span>
-            <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-        </li>
-        <li class="about-item"><svg class="about-benefits-icon" width="50" height="50">
-                <use href="./images/icons.svg#icon-close"> </use>
-            </svg>
-            <span class="about-benefits-span"></span>
-            <p class="about-benefits-text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-        </li>
-
-    </ul>
 </section>

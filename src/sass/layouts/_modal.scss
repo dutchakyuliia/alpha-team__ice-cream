@@ -83,6 +83,12 @@
   border-radius: 10px;
   border: 2px solid #F8D24E;
   background-color: var(--color-white-main);
+
+  @include tablet {
+    width: 568px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .modal-title {
@@ -93,6 +99,12 @@
   line-height: 1.5;
   text-align: center;
   color: var(--color-black-main);
+
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .button-close {
@@ -121,6 +133,29 @@
   background-color: rgba(248, 210, 78, 0.1);
   margin-bottom: 12px;
   padding-left: 12px;
+
+  @include tablet {
+    width: 368px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+}
+
+.modal-form-input::placeholder,
+.coment-input::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-black-main);
+}
+
+
+
+.modal-form-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(128, 36, 0, 0.258 );
 }
 
 .coment-input {
@@ -131,6 +166,15 @@
   background-color: rgba(248, 210, 78, 0.1);
   padding: 8px 12px;
   margin-bottom: 24px;
+
+  @include tablet {
+      width: 368px;
+      height: 84px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
 }
 
 .modal-form-btn {
@@ -149,13 +193,271 @@
   color: var(--color-black-main);
 }
 
+/*buy-now */
+
+.form-check {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 82px;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.modal-buy-now .modal-title {
+  margin-bottom: 83px;
+  @include tablet {
+    margin-bottom: 103px;
+  }
+}
+
+.buy-now-element {
+  position: relative;
+  display: flex;
+  width: 132px;
+  height: 136px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  
+}
+
+.ice-cream-element {
+  border: 2px solid #96AF8C;
+}
+
+.ice-coffee-element {
+  border: 2px solid #EFD478;
+}
+
+.milkshake-element {
+  border: 2px solid #D6936D;
+}
+
+.buy-now-title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.modal-foto-container {
+  position: absolute;
+  top: -59px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.ice-cream-foto {
+  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+}
+
+.ice-coffee-foto {
+  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+}
+
+.milkshake-foto {
+  background-image: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+}
+
+.buy-now-foto {
+  position: absolute;
+  top: -7px;
+  bottom: 67px;
+  z-index: 1;
+}
+
+.ice-cream:checked+.ice-cream-element {
+  background-color: #96AF8C;
+}
+
+.ice-coffee:checked+.ice-coffee-element {
+  background-color: #EFD478;
+}
+
+.milkshake:checked+.milkshake-element {
+  background-color: #D6936D;;
+}
+
+/*product*/
+
+@include tablet {
+  .modal-product {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+   
+}
+
+@include max-mobile {
+.modal-product .modal-title {
+  display: block;
+  width: 142px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 27px;
+   }
+}
+
+@include tablet {
+.modal-product .modal-title {
+  margin-bottom: 32px;
+   }
+}
+
+.product-foto {
+  position: absolute;
+  top: -7px;
+  display: block;
+  width: 132px;
+  height: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.product-foto-container {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.list-value {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 39px;
+
+  @include tablet {
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+}
+
+.value-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9CBE8F;
+  border-radius: 40px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  @include tablet {
+    width: 65px;
+    height: 90px;
+    padding-bottom: 14px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.value-element {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 43px;
+  height: 43px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #9CBE8F;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  background-color: #9CBE8F;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  color: var(--color-black-main);
+  
+  @include tablet {
+    width: 53px;
+    height: 53px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.modal-uptitle {
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--color-black-main);
+}
+
+.list-ingr-item {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+
+  &:not(:last-child){
+    margin-bottom: 11px;
+  }
+}
+
+.list-ingridient {
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 48px;
+  }
+}
+
+
 /*відео */
+
+@include tablet {
+  .modal-video {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 
 .video {
   width: 224px;
   height: 199px;
   border-radius: 10px;
   margin-bottom: 20px;
+
+  @include tablet {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-text {
@@ -164,14 +466,27 @@
   font-size: 14px;
   line-height: 1.4;
   color: var(--color-black-main);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 
-/*франчайзинг */
 
-.modal-franchise .modal-text {
-  margin-bottom: 20px;
+
+/*локація */
+
+@include tablet {
+  .location-foto {
+    width: 448px;
+    height: 260px;
+  }
+  .modal-location {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
-
 
 
 .location-link {
@@ -190,6 +505,26 @@
   font-size: 12px;
   line-height: 1.25;
   color: var(--color-black-main);
+
+  @include tablet {
+    margin-top: 32px;
+  }
 }
 
+/*франчайзинг */
+
+.modal-franchise .modal-text {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+@include tablet {
+  .modal-franchise {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 

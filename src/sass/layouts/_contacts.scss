@@ -24,7 +24,13 @@
     background: #FCFCFC;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    
+    @include tablet{
+        padding-left: 24px;
+        padding-right: 42px;
+    }
+}
+.cards:first-child {
+    padding-right: 25px;   
 }
 .block-up-titel{
     width: 80px;
@@ -39,6 +45,13 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    @include tablet{
+        width: 73px;
+        padding: 4px 13px;
+        font-size: 16px;
+        line-height: 140%;
+        border-radius: 6px;   
+    }
 }
 .up-titel{  
     width: 130px;
@@ -53,6 +66,13 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+    @include tablet{
+        width: 138px;
+        padding: 4px 10px;
+        font-size: 16px;
+        line-height: 140%;
+        border-radius: 6px;   
+    }
 }
 .second-titel{
     margin-bottom: 8px;
@@ -60,11 +80,24 @@
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
+    @include tablet{
+        font-size: 14px;
+    }
+
 }
 .block-map{
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
     margin-bottom: 24px;
+    max-width: 212px;
+    
+    
+}
+.span-mob{
+    margin-right: 58px;
+    @include tablet{
+        margin-right: 0; 
+    }
 }
 .link-map{
     color: #D6936D;
@@ -72,7 +105,9 @@
     font-size: 12px;
     line-height: 183%;
     letter-spacing: 0.04em;
-    
+    @include tablet{
+        font-size: 14px;  
+    }
 }
 .time
 {
@@ -82,12 +117,18 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 186%;
+    @include tablet{
+        font-size: 14px;  
+    }
 }
 .time-text{
    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     color: #ABABAB; 
+    @include tablet{
+        font-size: 14px;  
+    }
 }
 .block-time{
     margin-top: 24px;
@@ -103,6 +144,10 @@
     font-size: 12px;
     line-height: 160%;
     color: #131313;
+    @include tablet{
+        font-size: 14px;
+        line-height: 150%;  
+    }
 }
 .Our-Locations{
     width: 196px;
@@ -114,7 +159,7 @@
 
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
     display: flex;
     align-items: center;
     text-align: center;
@@ -136,9 +181,10 @@
     background: none;
     border-radius: 10px;
     padding: 4px 55px;
+
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
     display: flex;
     align-items: center;
     text-align: center;

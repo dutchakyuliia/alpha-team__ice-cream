@@ -74,6 +74,7 @@
   @include desktop {
     padding-top: 183px;
   }
+  // ice cream images ::before----------
   &__ice-cream::before {
     content: '';
     position: absolute;
@@ -81,19 +82,20 @@
     z-index: 1;
     width: 200px;
     height: 200px;
-    background-image: url(../images/products/product-1-mob-tab-min.png);
+    background-image: url(../images/products/kelsey-curtis-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 50%;
     @include retina {
-      background-image: url(../images/products/product-1-mob-tab-2x-min.png);
+      background-image: url(../images/products/kelsey-curtis-mobile@2x.jpg);
     }
     @include desktop {
       width: 302px;
       height: 302px;
-      background-image: url(../images/products/product-1-desk-min.png);
+      background-image: url(../images/products/kelsey-curtis-desktop.jpg);
       @include retina {
-        background-image: url(../images/products/product-1-desk-2x-min.png);
+        background-image: url(../images/products/kelsey-curtis-desktop@2x.jpg);
       }
     }
   }
@@ -104,16 +106,20 @@
     z-index: 1;
     width: 200px;
     height: 200px;
-    background-image: url(../images/products/product-2-mob-tab-min.png);
+    background-image: url(../images/products/pariwat-pannium-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
     @include retina {
-      background-image: url(../images/products/product-2-mob-tab-2x-min.png);
+      background-image: url(../images/products/pariwat-pannium-mobile@2x.jpg);
     }
     @include desktop {
       width: 302px;
       height: 302px;
-      background-image: url(../images/products/product-2-desk-min.png);
+      background-image: url(../images/products/pariwat-pannium-desktop.jpg);
       @include retina {
-        background-image: url(../images/products/product-2-desk-2x-min.png);
+        background-image: url(../images/products/pariwat-pannium-desktop@2x.jpg);
       }
     }
   }
@@ -124,18 +130,23 @@
     z-index: 1;
     width: 200px;
     height: 200px;
-    background-image: url(../images/products/product-3-mob-tab-min.png);
+    background-image: url(../images/products/victor-rutka-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
     @include retina {
-      background-image: url(../images/products/product-3-mob-tab-2x-min.png);
+      background-image: url(../images/products/victor-rutka-mobile@2x.jpg);
     }
     @include desktop {
       width: 302px;
       height: 302px;
-      background-image: url(../images/products/product-3-desk-min.png);
+      background-image: url(../images/products/victor-rutka-desktop.jpg);
       @include retina {
-        background-image: url(../images/products/product-3-desk-2x-min.png);
+        background-image: url(../images/products/victor-rutka-desktop@2x.jpg);
       }
     }
+    // ------------
   }
   @include tablet {
     flex-basis: calc((100% - 2 * 16px) / 3);
@@ -182,6 +193,7 @@
   &__milkshakes {
     background-color: var(--orange-product);
   }
+  // circle background-image under ice cream ::before----------
   &__ice-cream::before {
     content: '';
     position: absolute;
@@ -239,6 +251,7 @@
       height: 302px;
     }
   }
+  // -------------------
 }
 .product-card__title {
   font-size: 20px;

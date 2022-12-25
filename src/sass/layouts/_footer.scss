@@ -146,13 +146,19 @@
   line-height: 1.52;
   text-align: center;
   color: var(--rights-color);
-  border-top: 1px solid var(--border-color);
 
   @media screen and (min-width: 768px) {
     width: 100%;
-    padding: 12px 0;
 
     line-height: 1.86;
     letter-spacing: 0.02em;
+  }
+}
+
+.footer__border {
+  border-top: 1px solid var(--border-color);
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 16px;
   }
 }

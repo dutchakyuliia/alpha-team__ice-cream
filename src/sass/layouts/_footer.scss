@@ -20,20 +20,17 @@
 
 .footer__title {
   width: 234px;
-  height: 134px;
   margin-bottom: 60px;
   text-transform: uppercase;
   color: var(--color-white-main);
 
   @media screen and (min-width: 768px) {
     width: 352px;
-    height: 183px;
     margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 514px;
-    height: 122px;
     margin-bottom: 60px;
   }
 }

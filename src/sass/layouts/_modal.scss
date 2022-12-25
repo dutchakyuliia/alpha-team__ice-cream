@@ -38,10 +38,6 @@
   background-color: #fff;
   transition: 0.3s all;
 }
-.modal-product, .modal-franchise, .modal-buy-now {
-  position: absolute;
-
-}
 
 /* Стили для активных классов подложки и окна */
 
@@ -55,6 +51,7 @@
 
 .modal-container {
   width: 280px;
+  max-width: 100%;
   padding: 28px;
   border-radius: 10px;
   border: 2px solid #F8D24E;

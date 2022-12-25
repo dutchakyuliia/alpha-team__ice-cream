@@ -1,0 +1,76 @@
+.hero{
+    background-color: var(--bg-green-main);
+}
+
+.hero-title{
+    text-align:left;
+    font-family: 'Seymour One';
+     font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--color-white-main);
+        
+        font-size: 26px;
+        line-height: calc(33 / 26);
+        width: 247px;
+
+        margin-bottom: 32px;
+
+        @mixin tablet {
+            margin-bottom: 24px;
+        }
+
+        @mixin desktop {
+            font-size: 38px;
+            line-height: calc(48 / 38);
+            width: 367px;
+            margin-bottom: 28px;
+        }
+}
+
+.hero-nav{
+display: flex;
+align-items: baseline;
+gap: 12px;
+@mixin desktop {
+    gap: 32px;
+}
+}
+
+.hero-btns{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    align-items: center;
+text-align: center;
+
+}
+
+.hero-bt1{
+    background-color: var(--bg-green-main);
+    color: var(--color-black-accent);
+    border: 2px solid var(--btn-defaut);
+    border-radius: 8px;
+    padding: 11px 26px;
+    &:hover{
+        border: 2px solid var(--btn-hover-focus);
+    }
+}
+
+.hero-bt2{
+    background-color: var(--bg-green-main);
+    text-decoration-line: underline;
+    border: none;
+    color: var(--btn-defaut);
+    &:hover{
+        color: var(--btn-hover-focus);
+    }
+    &:focus{
+        color: var(--color-white-main);
+    }
+    &:disabled{
+        color: var(--btn-disabled);
+    }
+}
+

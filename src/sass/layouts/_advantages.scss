@@ -1,0 +1,180 @@
+
+.advantages {
+    background-color: var(--bg-green-main);
+    padding-top: 50px;
+    padding-bottom: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    @include tablet{
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+    @include desktop{
+        padding-top: 146px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.container-advantages{
+    position: relative;
+    @include tablet{
+        display: flex;
+        padding-bottom: 204px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-item {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+@include tablet{
+    width: 152px;
+    gap: 80px;
+}
+@include desktop{
+    width: 368px;
+    gap: 32px;
+}
+}
+
+.advantages-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;  
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color:var(--color-white-main);
+    margin-bottom: 16px;
+    margin-top: 16px;
+    @include tablet{
+        font-size: 48px;
+        line-height: 1.23;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    @include desktop{
+        font-size: 58px;
+        line-height: 1.22;
+        margin-top: 0;
+
+    }
+}
+
+.advantages-text{
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 170%;
+text-align: center;
+color:var(--color-white-main);
+@include tablet{
+    font-size: 14px;
+    line-height: 174%;
+}
+@include desktop{
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+}
+}
+
+.advantages-title-cow::before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color:var(--color-yellow) ;
+    background-image: url(../images/advantages/cow-min.png);
+    fill: var(--color-black-main) ;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    @include retina{
+        background-image: url(../images/advantages/cow-2x-min.png);
+        background-size: 36px 36px;
+    }
+    @include tablet{
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        margin-bottom: 40px;
+    }
+}
+
+.advantages-title-weight::before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color:var(--color-yellow) ;
+    background-image: url(../images/advantages/weight-min.png);
+    fill: var(--color-black-main) ;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    margin-top: 28px;
+    @include retina{
+        background-image: url(../images/advantages/weight-2x-min.png);
+        background-size: 36px 36px;
+    }
+    @include tablet{
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        margin-bottom: 40px;
+    }
+}
+
+.advantages-title-ice::before {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color:var(--color-yellow) ;
+    background-image: url(../images/advantages/ice-cream-min.png);
+    fill: var(--color-black-main) ;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    margin-top: 28px;
+    @include retina{
+        background-image: url(../images/advantages/ice-cream-2x-min.png);
+        background-size: 36px 36px;
+    }
+    @include tablet{
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    @include desktop{
+        margin-bottom: 40px;
+    }
+}

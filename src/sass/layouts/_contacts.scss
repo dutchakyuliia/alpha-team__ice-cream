@@ -6,7 +6,6 @@
     width: 280px;
     padding-top: 40px;
     @include tablet{
-        display: flex;
         flex-direction: row;
         justify-content: center;
         width: 768px;
@@ -15,6 +14,7 @@
     @include desktop{
         width: 1200px;
         padding-top: 100px;
+        gap: 32px;
     }
 }
 .section-btn{

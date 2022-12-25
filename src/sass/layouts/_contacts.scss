@@ -222,8 +222,10 @@
     background: #0A8817;
 }
 .Our-Locations:focus{
-    color: #ffff;
-    
+    color: #ffff; 
+}
+.Our-Locations:focus .btn-icon {
+    fill: #ffff;
 }
 .Our-Locations:disabled{
     background: #ABABAB;
@@ -253,7 +255,15 @@
     border: 2px solid #0A8817;
     color: #ffff;
 }
+.Franchise:focus .btn-icon {
+    fill: #ffff;
+}
 .Franchise:disabled{
     border: 2px solid #ABABAB;
 }
-
+.btn-icon{
+    fill: #000000;;
+}
+.btn-icon:focus{
+    fill: #ffff;
+}

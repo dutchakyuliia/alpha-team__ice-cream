@@ -143,19 +143,10 @@
 
 .logo {
   display: block;
-  // @media screen and (min-width: 480px) {
-  //   padding-top: 12px;
-  //   padding-bottom: 12px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 20px;
-  //   padding-bottom: 20px;
-  // }
+  
 
   @media screen and (min-width: 1200px) {
-    // padding-top: 8px;
-    // padding-bottom: 8px;
+    
     margin-right: 308px;
   }
 }
@@ -240,9 +231,25 @@
   flex-direction: column;
 
   overflow: auto;
+  transform: translateX(0);
+  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  
 
+  &.is-hidden {
+    transform: translateX(-100%);
+    
+    
+  }
+  
   @media screen and (min-width: 768px) {
     background-color: var(--bg-tablet);
+
+    transform: translateX(0);
+   transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden{
+    transform: translateX(-100%);
+   }
   }
 
   @media screen and (min-width: 1200px) {

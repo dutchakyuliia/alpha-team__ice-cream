@@ -2,18 +2,16 @@
   padding-top: 61px;
   padding-bottom: 0px;
   background-color: #84a178;
-  outline: 1px solid orange;
+  // outline: 1px solid orange;
 
   @include tablet {
     padding-top: 60px;
-    // padding-bottom: 204px;
   }
   @include desktop {
     padding-top: 60px;
-    // padding-bottom: 178px;
   }
   &-container {
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
   }
 
   &-label {
@@ -53,18 +51,11 @@
       font-size: 30px;
       line-height: calc(37 / 30);
     }
-    // &-text {
-    //   width: 100%;
-    //   @include tablet {
-    //     width: 336px;
-    //   }
-    //   @include desktop {
-    //     width: 463px;
-    //   }
-    // }
   }
   &-title {
-    width: 210px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
     @include tablet {
       width: 100%;
     }
@@ -92,7 +83,7 @@
       gap: 109px;
     }
   }
-  &-bg-absolute {
+  &-img-absolute {
     content: '';
     min-width: 279px;
     width: 279px;
@@ -117,67 +108,66 @@
       height: 490px;
       border-radius: 250px;
     }
-  }
-  &-img-absolute {
-    display: flex;
-    content: '';
-    width: 279px;
-    height: 278px;
+    &::after {
+      display: flex;
+      content: '';
+      width: 279px;
+      height: 278px;
 
-    top: 22px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 10;
+      top: 22px;
+      position: absolute;
+      border-radius: 50%;
+      z-index: 10;
 
-    background-repeat: no-repeat;
-    background-position: left;
-    background: size 50%;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
 
-    background-image: url(../images/about/cow-mobile.jpg);
+      background-image: url(../images/about/cow-mobile.jpg);
 
-    // @include retina {
-    //   background-image: linear-gradient(var(--hero-grad)),
-    //     url(../images/about/cow-mobile@2x.jpg);
-    // }
-    @include retina {
-      background-image: url(../images/about/cow-mobile@2x.jpg);
-      background-size: 279px 278px;
-    }
-
-    @include tablet {
-      width: 330px;
-      height: 330px;
-      left: 0;
-      top: 26px;
-
-      background-image: url(../images/about/cow-tablet.jpg);
       @include retina {
-        background-image: url(../images/about/cow-tablet@2x.jpg);
-        background-size: 330px 330px;
+        background-image: url(../images/about/cow-mobile@2x.jpg);
+        background-size: 279px 278px;
       }
-    }
 
-    @include desktop {
-      width: 490px;
-      height: 490px;
-      top: 39px;
+      @include tablet {
+        width: 330px;
+        height: 330px;
+        left: 0;
+        top: 26px;
 
-      background-image: url(../images/about/cow-dekstop.jpg);
-      @include retina {
-        background-image: url(../images/about/cow-dekstop@2x.jpg);
-        background-size: 490px 490px;
+        background-image: url(../images/about/cow-tablet.jpg);
+        @include retina {
+          background-image: url(../images/about/cow-tablet@2x.jpg);
+          background-size: 330px 330px;
+        }
+      }
+
+      @include desktop {
+        width: 490px;
+        height: 490px;
+        top: 39px;
+
+        background-image: url(../images/about/cow-dekstop.jpg);
+        @include retina {
+          background-image: url(../images/about/cow-dekstop@2x.jpg);
+          background-size: 490px 490px;
+        }
       }
     }
   }
 
   &-text {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
     display: flex;
     gap: 4px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    width: 220px;
     letter-spacing: 0.04em;
     text-align: center;
     color: var(--color-white-main);

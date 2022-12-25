@@ -106,15 +106,8 @@
 }
 
 .modal-icon {
-  width: 11px;
-  height: 11px;
-  fill: var(--color-black-main);
-
-  @include tablet {
-    width: 13px;
-    height: 13px;
+    fill: var(--color-black-main);
   }
-}
 
 .modal-form-input {
   height: 32px;

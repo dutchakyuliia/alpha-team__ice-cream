@@ -206,7 +206,7 @@
     background: #F8D24E;
     border: none;
     border-radius: 10px;
-    padding: 4px 40px;
+    padding: 4px 39px;
 
     font-weight: 600;
     font-size: 14px;
@@ -214,12 +214,16 @@
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    gap: 4px;
+    
 }
 .Our-Locations:hover{
     background: #0A8817;
 }
 .Our-Locations:focus{
     color: #ffff;
+    
 }
 .Our-Locations:disabled{
     background: #ABABAB;
@@ -231,7 +235,7 @@
     border: 2px solid #F8D24E;
     background: none;
     border-radius: 10px;
-    padding: 4px 55px;
+    padding: 4px 53px;
 
     font-weight: 600;
     font-size: 14px;
@@ -239,6 +243,8 @@
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    gap: 4px;
 }
 .Franchise:hover{
     border: 2px solid #0A8817;
@@ -250,3 +256,4 @@
 .Franchise:disabled{
     border: 2px solid #ABABAB;
 }
+

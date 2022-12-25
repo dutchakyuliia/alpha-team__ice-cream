@@ -261,6 +261,8 @@
   left: 0;
   width: 132px;
   height: 132px;
+  border-radius: 50%;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -310,6 +312,8 @@
   height: 132px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
   }
 
 .product-foto-container {

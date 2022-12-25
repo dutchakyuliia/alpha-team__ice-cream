@@ -1,142 +1,72 @@
 <!-- Элементы для вызова модальных окон, могут быть любые -->
-<button type="button" class="js-open-modal" data-modal="1">ingredients</button>
-<button type="button" class="js-open-modal" data-modal="2">buy now</button>
+<button type="button" class="js-open-modal" data-modal="1">buy now</button>
+<button type="button" class="js-open-modal" data-modal="2">ingredients</button>
 <button type="button" class="js-open-modal" data-modal="3">read more</button>
 <button type="button" class="js-open-modal" data-modal="4">our location</button>
 <button type="button" class="js-open-modal" data-modal="5">franchise</button>
 
 <!-- Несколько модальных окон -->
-<div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 1</p>
-</div>
-
-<div class="modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 2</p>
-</div>
-
-<div class="modal" data-modal="3">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 3</p>
-</div>
-
-<div class="modal" data-modal="4">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 4</p>
-</div>
-<div class="modal" data-modal="5">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 5</p>
-</div>
 
 <!-- Подложка под модальным окном -->
 <div class="overlay js-overlay-modal"></div>
 
-
-<!-- buy-now -->
-
-<div class="modal-buy-now modal-container">
-  <button type="button" class="button-close">
-    <svg class="modal-icon" width="11" height="11">
+<!-- buy-now-2 -->
+<div class="modal-buy-now modal-container modal" data-modal="1">
+  <button type="button" class="button-close js-modal-close">
+    <svg class="modal-icon">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
-  <h3 class="modal-title">Buy now</h3>
-  <form action="#" class="form-check">
-    <input type="checkbox" name="ice-cream" id="ice-cream" class="ice-cream hidden">
-    <label for="ice-cream" class="buy-now-element ice-cream-element">
-      <div class="modal-foto-container ice-cream-foto">
-        <picture class="buy-now-foto ">
-          <source srcset="./images/modals/buy-1-min.png 1x, ./images/modals/buy-1-2x-min.png 2x">
-          <img src="./images/modals/buy-1-min.png" alt="ice-coffee" width="132">
-        </picture>
-      </div>
-      <h3 class="buy-now-title">ice cream</h3>     
-      </label>
-    <input type="checkbox" name="ice-coffee" id="ice-coffee" class="ice-coffee hidden">
-    <label for="ice-coffee" class="buy-now-element ice-coffee-element">
-      <div class="modal-foto-container ice-coffee-foto">
-        <picture class="buy-now-foto">
-          <source srcset="./images/modals/buy-2-min.png 1x, ./images/modals/buy-2-2x-min.png 2x">
-          <img src="./images/modals/buy-2-min.png" alt="ice-coffee" width="132">
-        </picture>
-      </div>
-      <h3 class="buy-now-title">ice coffee</h3>
-    </label>
-    <input type="checkbox" name="milkshake" id="milkshake" class="milkshake hidden">
-    <label for="milkshake" class="buy-now-element milkshake-element">
-      <div class="modal-foto-container milkshake-foto">
-        <picture class="buy-now-foto">
-          <source srcset="./images/modals/buy-3-min.png 1x, ./images/modals/buy-3-2x-min.png 2x">
-          <img src="./images/modals/buy-3-min.png" alt="milkshake" width="132">
-        </picture>
-      </div>
-      <h3 class="buy-now-title">milkshake</h3>
-    </label>
-    </form>
-    <form>
-      <input type="text" name="user-name" placeholder="Name" class="modal-form-input" required>
-      <input type="text" name="user-tel" placeholder="Phone" class="modal-form-input" required>
-      <textarea name="user-coment" class="coment-input" cols="" rows="" placeholder="Comment"></textarea>
-      <button type="submit" class="modal-form-btn">Submit</button>
-    </form>
+  <p class="modal-title">Buy now</p>
+  <form>
+    <ul class="buy-now-list">
+      <li class="buy-now-item">
+        <div class="modal-foto-container ice-cream-foto">
+          <picture class="buy-now-foto ">
+            <source srcset="./images/modals/buy-1-min.png 1x, ./images/modals/buy-1-2x-min.png 2x">
+            <img src="./images/modals/buy-1-min.png" alt="ice-coffee" width="132">
+          </picture>
+        </div>
+        <input type="checkbox" name="ice-cream" id="ice-cream" class="ice-cream hidden">
+        <label for="ice-cream" class="buy-now-element ice-cream-element">ice cream</label>
+      </li>
+      <li class="buy-now-item">
+        <div class="modal-foto-container ice-coffee-foto">
+          <picture class="buy-now-foto">
+            <source srcset="./images/modals/buy-2-min.png 1x, ./images/modals/buy-2-2x-min.png 2x">
+            <img src="./images/modals/buy-2-min.png" alt="ice-coffee" width="132">
+          </picture>
+        </div>
+        <input type="checkbox" name="ice-coffee" id="ice-coffee" class="ice-coffee hidden">
+        <label for="ice-coffee" class="buy-now-element ice-coffee-element">ice coffee</label>
+      </li>
+      <li class="buy-now-item">
+        <div class="modal-foto-container milkshake-foto">
+          <picture class="buy-now-foto">
+            <source srcset="./images/modals/buy-3-min.png 1x, ./images/modals/buy-3-2x-min.png 2x">
+            <img src="./images/modals/buy-3-min.png" alt="milkshake" width="132">
+          </picture>
+        </div>
+        <input type="checkbox" name="milkshake" id="milkshake" class="milkshake hidden">
+        <label for="milkshake" class="buy-now-element milkshake-element">milkshake</label>
+      </li>  
+    </ul>
+    <input type="text" name="user-name" placeholder="Name" class="modal-form-input" required>
+    <input type="tel" name="user-tel" placeholder="Phone" class="modal-form-input" required>
+    <textarea name="user-coment" class="coment-input" cols="30" rows="10" placeholder="Comment"></textarea>
+    <button type="submit" class="modal-form-btn">Submit</button>
+  </form>
 </div>
 
 <!-- product -->
 
-<div class="modal-product modal-container">
-  <button type="button" class="button-close">
-    <svg class="modal-icon" width="11" height="11">
+<div class="modal-product modal-container modal" data-modal="2">
+  <button type="button" class="button-close  js-modal-close">
+    <svg class="modal-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
-  <h3 class="modal-title modal-product-title">Chololate icecream</h3>
+  <p class="modal-title modal-product-title">Chololate icecream</p>
   <div class="product-foto-container">
     <picture class="product-foto">
       <source srcset="./images/modals/ingredients-min.png 1x, ./images/modals/ingredients-2x-min.png 2x">
@@ -166,9 +96,9 @@
     <li class="list-ingr-item"><span>Sugar</span> 40g</li>
     <li class="list-ingr-item"><span>Vanilla sugar</span> <span>10g</span></li>
   </ul>
-  <form action="">
+  <form>
     <input type="text" name="user-name" placeholder="Name" class="modal-form-input" required>
-    <input type="text" name="user-tel" placeholder="Phone" class="modal-form-input" required>
+    <input type="tel" name="user-tel" placeholder="Phone" class="modal-form-input" required>
     <textarea name="user-coment" class="coment-input" cols="" rows="" placeholder="Comment"></textarea>
     <button type="submit" class="modal-form-btn">Submit</button>
   </form>
@@ -176,16 +106,15 @@
 
 <!-- video -->
 
-<div class="modal-video modal-container">
-  <button type="button" class="button-close">
-    <svg class="modal-icon" width="11" height="11">
+<div class="modal-video modal-container modal" data-modal="3">
+  <button type="button" class="button-close js-modal-close">
+    <svg class="modal-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
-  <h3 class="modal-title">How it’s made?</h3>
-  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Mk2V8v6cC0Q"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  <p class="modal-title">How it’s made?</p>
+  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/GceBGYTkFwQ" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
   <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor
   sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
@@ -193,13 +122,13 @@
 
 <!-- location -->
 
-<div class="modal-location modal-container">
-  <button type="button" class="button-close">
-    <svg class="modal-icon" width="11" height="11">
+<div class="modal-location modal-container modal" data-modal="4">
+  <button type="button" class="button-close js-modal-close">
+    <svg class="modal-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
-  <h3 class="modal-title">Our Locations</h3>
+  <p class="modal-title">Our Locations</p>
   <picture class="location-foto">
     <source srcset="./images/modals/map-tab-desk.jpg 1x, ./images/modals/map-tab-desk-2x.jpg 2x" media="(min-width: 768px)">
     <source srcset="./images/modals/map-mob.jpg 1x, ./images/modals/map-mob-2x.jpg 2x" media="(max-width: 767px)">
@@ -210,13 +139,13 @@
 
 <!-- franchise -->
 
-<div class="modal-franchise modal-container">
-  <button type="button" class="button-close">
-    <svg class="modal-icon" width="11" height="11">
+<div class="modal-franchise modal-container modal" data-modal="5">
+  <button type="button" class="button-close js-modal-close">
+    <svg class="modal-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
-  <h3 class="modal-title">Thank you for your interest in owning an Ice Cream shop</h3>
+  <p class="modal-title">Thank you for your interest in owning an Ice Cream shop</p>
   <p class="modal-text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this
     time. Once
     the application process resumes, we will contact you for further information. Please fill out the contact
@@ -224,10 +153,9 @@
     below and we will reach out for additional information. We appreciate your patience.</p>
   <form>
     <input type="text" name="user-name" placeholder="Name" class="modal-form-input" required>
-    <input type="text" name="user-tel" placeholder="Phone" class="modal-form-input" required >
-    <input type="mail" name="user-mail" placeholder="Email" class="modal-form-input" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+    <input type="tel" name="user-tel" placeholder="Phone" class="modal-form-input" required >
+    <input type="email" name="user-mail" placeholder="Email" class="modal-form-input" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
     <textarea name="user-coment" class="coment-input" cols="" rows="" placeholder="Comment"></textarea>
     <button type="submit" class="modal-form-btn">Submit</button>
   </form>
-
 </div>

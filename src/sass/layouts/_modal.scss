@@ -22,11 +22,7 @@
   opacity: 0;
   visibility: hidden;
 
-  /*  Установаем ширину окна  */
-  width: 100%;
-  max-width: 500px;
-
-  /*  Центрируем и задаем z-index */
+   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -42,6 +38,13 @@
   background-color: #fff;
   transition: 0.3s all;
 }
+.modal-product, .modal-franchise, .modal-buy-now {
+  position: absolute;
+  top: 20px;;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
 
 /* Стили для активных классов подложки и окна */
 
@@ -51,33 +54,9 @@
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
-
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
-}
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-.js-open-modal {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #041186;
-  color: rgb(216, 234, 9);
-  border-radius: 3px;
-}
-
 /*загальні стилі */
 
 .modal-container {
-  position: relative;
   width: 280px;
   padding: 28px;
   border-radius: 10px;
@@ -119,10 +98,22 @@
   padding: 0;
   align-items: center;
   justify-content: center;
+
+  @include tablet {
+      width: 24px;
+      height: 24px;
+    }
 }
 
 .modal-icon {
+  width: 11px;
+  height: 11px;
   fill: var(--color-black-main);
+
+  @include tablet {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .modal-form-input {
@@ -166,6 +157,7 @@
   background-color: rgba(248, 210, 78, 0.1);
   padding: 8px 12px;
   margin-bottom: 24px;
+  resize: none;
 
   @include tablet {
       width: 368px;
@@ -195,7 +187,7 @@
 
 /*buy-now */
 
-.form-check {
+.buy-now-list {
   display: flex;
   flex-wrap: wrap;
   gap: 82px;
@@ -207,6 +199,10 @@
     gap: 32px;
     margin-bottom: 40px;
   }
+}
+
+.buy-now-item {
+  position: relative;
 }
 
 .modal-buy-now .modal-title {
@@ -225,6 +221,12 @@
   justify-content: center;
   align-items: flex-end;
   border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   
 }
 
@@ -238,15 +240,6 @@
 
 .milkshake-element {
   border: 2px solid #D6936D;
-}
-
-.buy-now-title {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .modal-foto-container {
@@ -271,8 +264,10 @@
 
 .buy-now-foto {
   position: absolute;
-  top: -7px;
-  bottom: 67px;
+  bottom: 7px;
+  left: 0;
+  width: 132px;
+  height: 132px;
   z-index: 1;
 }
 

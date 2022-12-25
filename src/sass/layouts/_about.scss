@@ -1,16 +1,16 @@
 .about {
   padding-top: 61px;
-  padding-bottom: 64px;
+  padding-bottom: 0px;
   background-color: #84a178;
   outline: 1px solid orange;
 
   @include tablet {
     padding-top: 60px;
-    padding-bottom: 204px;
+    // padding-bottom: 204px;
   }
   @include desktop {
     padding-top: 60px;
-    padding-bottom: 178px;
+    // padding-bottom: 178px;
   }
   &-container {
     outline: 1px solid tomato;
@@ -30,6 +30,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: calc(22 / 18);
+    letter-spacing: normal;
 
     text-align: center;
     text-transform: uppercase;
@@ -37,45 +38,66 @@
     color: var(--color-white-main);
 
     @include tablet {
-      width: 100%;
-      margin-bottom: 80px;
+      margin-bottom: 72px;
+
+      font-weight: 800;
+      font-size: 22px;
+      line-height: calc(27 / 22);
+      letter-spacing: 0.04em;
     }
 
     @include desktop {
-      width: 100%;
-      margin-bottom: 172px;
+      margin-bottom: 82px;
+
+      font-weight: 800;
+      font-size: 30px;
+      line-height: calc(37 / 30);
     }
-    &-text {
-    }
+    // &-text {
+    //   width: 100%;
+    //   @include tablet {
+    //     width: 336px;
+    //   }
+    //   @include desktop {
+    //     width: 463px;
+    //   }
+    // }
   }
   &-title {
     width: 210px;
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop {
+    }
   }
 
   &-item {
+    // padding-right: 50px;
+    // padding-left: 50px;
     position: relative;
-    z-index: 10;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 62px;
     align-items: center;
     flex-wrap: wrap;
 
     @include tablet {
+      margin-right: 2px;
+      margin-left: 0px;
       flex-wrap: nowrap;
       gap: 38px;
     }
 
     @include desktop {
+      margin-right: 121px;
       gap: 109px;
     }
-    &-before {
-      display: flex;
+
+    &::before {
       content: '';
       width: 279px;
       height: 278px;
-      left: 0;
-      bottom: 10px;
 
       background: linear-gradient(
           0deg,
@@ -85,91 +107,140 @@
         #d9d9d9;
       box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
       border-radius: 140px;
+
+      @include tablet {
+        width: 330px;
+        height: 330px;
+        border-radius: 165px;
+      }
+      @include desktop {
+        width: 490px;
+        height: 490px;
+        border-radius: 250px;
+      }
     }
   }
-
   &-img {
+    top: 22px;
     position: absolute;
-    // z-index: 20;
     @include tablet {
-      position: absolute;
       left: 0;
-      bottom: 0;
+      top: 26px;
+    }
+    @include desktop {
+      top: 39px;
     }
   }
 
   &-text {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 220px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--color-white-main);
 
     @include tablet {
-      margin-left: auto;
-      // margin-right: 32px;
+      padding-right: 0px;
+      padding-left: 0px;
+      align-items: flex-start;
+      gap: 8px;
       width: 336px;
+      text-align: left;
     }
     @include desktop {
-      margin-left: auto;
-      // margin-right: 121px;
       width: 463px;
+      font-size: 16px;
     }
 
     &-upper {
+      display: flex;
       margin-bottom: 4px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
       font-size: 12px;
       line-height: calc(21 / 12);
-      text-align: center;
-      letter-spacing: 0.04em;
-      color: var(--color-white-main);
+
+      @include desktop {
+        font-size: 16px;
+        line-height: calc(28 / 16);
+      }
     }
 
     &-middle {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
       font-size: 12px;
       line-height: calc(19 / 12);
-      text-align: center;
-      color: var(--color-white-main);
+      @include tablet {
+        line-height: calc(21 / 12);
+      }
+      @include desktop {
+        font-size: 14px;
+        line-height: calc(27 / 14);
+      }
     }
     &-lower {
       display: none;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
       font-size: 12px;
       line-height: calc(23 / 12);
-      letter-spacing: 0.04em;
-      color: var(--color-white-main);
 
       @include tablet {
-        display: contents;
+        display: flex;
+      }
+      @include desktop {
+        font-size: 14px;
+        line-height: calc(27 / 14);
       }
     }
   }
 }
-.section-title {
+
+.about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  width: 164px;
+  height: 42px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: var(--color-black-accent);
+  border-color: transparent;
+
+  background: var(--color-yellow);
+  border-radius: 10px;
+
+  transition-property: background, color, fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    margin-top: 32px;
+    width: 200px;
+    height: 50px;
+  }
+  @include desktop {
+    margin-top: 54px;
+    width: 216px;
+    height: 50px;
+  }
+  &:hover {
+    background: var(--btn-hover-focus);
+    transform: background;
+  }
+  &:focus {
+    background: var(--btn-hover-focus);
+    color: var(--fill-soc-hover-focus);
+    fill: var(--fill-soc-hover-focus);
+    transform: background, color, fill;
+  }
 }
-.about-img {
-}
-.about-text-upper {
-}
-.about-text-lower {
-}
-.btn {
-}
-.about-benefits {
-}
-.about-benefits-item {
-}
-.about-benefits-icon {
-}
-.about-benefits-span {
-}
-.about-benefits-text {
-}
-.about-item {
+.about_icon {
+  margin-left: 10px;
 }

@@ -1,16 +1,16 @@
 .customer-reviews {
   position: relative;
   padding-bottom: 361px;
-  background-image: url(../../images/background/background-mobile.webp);
+  background-image: url(../images/background/backgroud_mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     padding-bottom: 379px;
-    background-image: url(../../images/background/background-tablet.webp);
+    background-image: url(../images/background/background-tablet.jpg);
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 228px;
-    background-image: url(../../images/background/background-dekstop.webp);
+    background-image: url(../images/background/background-dekstop.jpg);
   }
   .container {
     margin-left: auto;
@@ -34,29 +34,16 @@
 
 .customer-reviews__list {
   position: relative;
-  top: -32px;
+  top: 464px;
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    top: -144px;
+    top: 283px;
   }
   @media screen and (min-width: 1200px) {
-    top: -100px;
+    top: 178px;
   }
 
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    z-index: 10;
-
-    &.slick-prev {
-      left: 0;
-    }
-    &.slick-next {
-      right: 0;
-    }
-  }
   .slick-dots {
     display: flex;
     align-items: center;

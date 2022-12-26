@@ -50,7 +50,7 @@
     justify-content: center;
     gap: 18px;
     li.slick-active button {
-      background-color: #84a178;
+      background-color: var(--fill-soc-defaut);
     }
   }
   .slick-dots button {
@@ -58,11 +58,11 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #d9d9d9;
+    background-color: var(--bg-img-grey);
     border-color: transparent;
   }
   .customer-reviews__item {
-    opacity: 0;
+    opacity: 1;
     text-align: center;
     transition: opacity 0.3s ease-in-out 0s;
   }
@@ -84,10 +84,10 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 2.55;
-  color: #fcfcfc;
+  color: var(--fill-soc-hover-focus);
   text-align: center;
 
-  background-color: #84a178;
+  background-color: var(--fill-soc-defaut);
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {

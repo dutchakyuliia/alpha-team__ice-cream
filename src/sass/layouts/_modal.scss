@@ -40,7 +40,11 @@
 }
 
 .modal-product {
-  position: absolute; 
+ position: absolute;
+ top: 2vh;
+ left: 50%;
+ transform: translateX(-50%);
+
 }
 /* Стили для активных классов подложки и окна */
 

@@ -22,25 +22,16 @@
     <ul class="buy-now-list">
       <li class="buy-now-item">
         <div class="modal-foto-container ice-cream-foto">
-          <picture class="buy-now-foto">
-            <source
-              srcset="
-                ./images/modals/kelsey-curtis-mobile.jpg    1x,
-                ./images/modals/kelsey-curtis-mobile@2x.jpg 2x
-              "
-            />
-            <source
-              srcset="
-                ./images/modals/kelsey-curtis-mobile.webp    1x,
-                ./images/modals/kelsey-curtis-mobile@2x.webp 2x
-              "
-            />
-            <img
-              src="./images/modals/kelsey-curtis-mobile.jpg"
-              alt="ice cream"
-              width="132"
-            />
-          </picture>
+          <img
+            class="buy-now-foto"
+            srcset="
+              ./images/modals/kelsey-curtis-mobile.jpg    1x,
+              ./images/modals/kelsey-curtis-mobile@2x.jpg 2x
+            "
+            src="./images/modals/kelsey-curtis-mobile.jpg"
+            alt="ice cream"
+            width="132"
+          >
         </div>
         <input
           type="checkbox"
@@ -54,25 +45,16 @@
       </li>
       <li class="buy-now-item">
         <div class="modal-foto-container ice-coffee-foto">
-          <picture class="buy-now-foto">
-            <source
-              srcset="
-                ./images/modals/pariwat-pannium-mobile.jpg    1x,
-                ./images/modals/pariwat-pannium-mobile@2x.jpg 2x
-              "
-            />
-            <source
-              srcset="
-                ./images/modals/pariwat-pannium-mobile.webp    1x,
-                ./images/modals/pariwat-pannium-mobile@2x.webp 2x
-              "
-            />
-            <img
-              src="./images/modals/pariwat-pannium-mobile.jpg"
-              alt="ice-coffee"
-              width="132"
-            />
-          </picture>
+          <img
+            class="buy-now-foto"
+            srcset="
+              ./images/modals/pariwat-pannium-mobile.jpg    1x,
+              ./images/modals/pariwat-pannium-mobile@2x.jpg 2x
+            "
+            src="./images/modals/pariwat-pannium-mobile.jpg"
+            alt="ice-coffee"
+            width="132"
+          >
         </div>
         <input
           type="checkbox"
@@ -86,25 +68,16 @@
       </li>
       <li class="buy-now-item">
         <div class="modal-foto-container milkshake-foto">
-          <picture class="buy-now-foto">
-            <source
-              srcset="
-                ./images/modals/victor-rutka-mobile.jpg    1x,
-                ./images/modals/victor-rutka-mobile@2x.jpg 2x
-              "
-            />
-            <source
-              srcset="
-                ./images/modals/victor-rutka-mobile.webp    1x,
-                ./images/modals/victor-rutka-mobile@2x.webp 2x
-              "
-            />
-            <img
-              src="./images/modals/victor-rutka-mobile.jpg"
-              alt="milkshake"
-              width="132"
-            />
-          </picture>
+          <img
+            class="buy-now-foto"
+            srcset="
+              ./images/modals/victor-rutka-mobile.jpg    1x,
+              ./images/modals/victor-rutka-mobile@2x.jpg 2x
+            "
+            src="./images/modals/victor-rutka-mobile.jpg "
+            alt="milkshake"
+            width="132"
+          >
         </div>
         <input
           type="checkbox"
@@ -131,13 +104,12 @@
       name="user-tel"
       placeholder="Phone"
       class="modal-form-input"
+      pattern="^[0-9]+$"
       required
     />
     <textarea
       name="user-coment"
       class="coment-input"
-      cols="30"
-      rows="10"
       placeholder="Comment"
     ></textarea>
     <button type="submit" class="modal-form-btn">Submit</button>
@@ -148,31 +120,22 @@
 
 <div class="modal-product modal-container modal" data-modal="2">
   <button type="button" class="button-close js-modal-close">
-    <svg class="modal-icon" width="20" height="20">
+    <svg class="modal-icon">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
   <p class="modal-title modal-product-title">Chololate icecream</p>
   <div class="product-foto-container">
-    <picture class="product-foto">
-      <source
-        srcset="
-          ./images/modals/modal-photo.jpg    1x,
-          ./images/modals/modal-photo@2x.jpg 2x
-        "
-      />
-      <source
-        srcset="
-          ./images/modals/modal-photo.webp    1x,
-          ./images/modals/modal-photo@2x.webp 2x
-        "
-      />
-      <img
-        src="./images/modals/modal-photo.jpg"
-        alt="foto ice-cream"
-        width="132"
-      />
-    </picture>
+    <img
+      class="product-foto"
+      srcset="
+        ./images/modals/modal-photo.jpg    1x,
+        ./images/modals/modal-photo@2x.jpg 2x
+      "
+      src="./images/modals/modal-photo.jpg"
+      alt="foto ice-cream"
+      width="132"
+    >
   </div>
   <ul class="list-value">
     <li class="value-item"><span class="value-element">320</span> kcal</li>
@@ -206,13 +169,12 @@
       name="user-tel"
       placeholder="Phone"
       class="modal-form-input"
+      pattern="^[0-9]+$"
       required
     />
     <textarea
       name="user-coment"
       class="coment-input"
-      cols=""
-      rows=""
       placeholder="Comment"
     ></textarea>
     <button type="submit" class="modal-form-btn">Submit</button>
@@ -223,7 +185,7 @@
 
 <div class="modal-video modal-container modal" data-modal="3">
   <button type="button" class="button-close js-modal-close">
-    <svg class="modal-icon" width="20" height="20">
+    <svg class="modal-icon">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
@@ -249,7 +211,7 @@
 
 <div class="modal-location modal-container modal" data-modal="4">
   <button type="button" class="button-close js-modal-close">
-    <svg class="modal-icon" width="20" height="20">
+    <svg class="modal-icon">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
@@ -299,7 +261,7 @@
 
 <div class="modal-franchise modal-container modal" data-modal="5">
   <button type="button" class="button-close js-modal-close">
-    <svg class="modal-icon" width="20" height="20">
+    <svg class="modal-icon">
       <use href="./images/icons.svg#icon-cross"></use>
     </svg>
   </button>
@@ -328,6 +290,7 @@
       name="user-tel"
       placeholder="Phone"
       class="modal-form-input"
+      pattern="^[0-9]+$"
       required
     />
     <input
@@ -341,8 +304,6 @@
     <textarea
       name="user-coment"
       class="coment-input"
-      cols=""
-      rows=""
       placeholder="Comment"
     ></textarea>
     <button type="submit" class="modal-form-btn">Submit</button>

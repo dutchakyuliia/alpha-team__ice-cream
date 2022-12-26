@@ -1,97 +1,276 @@
-.hero{
+.hero {
+  background-color: var(--bg-green-main);
+}
+
+.horo-container{
     position: relative;
-    background-color: var(--bg-green-main);
 }
 
-.hero-title{
-    text-align:left;
-    font-family: 'Seymour One';
-     font-style: normal;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        color: var(--color-white-main);
-        
-        font-size: 26px;
-        line-height: calc(33 / 26);
-        width: 247px;
+.hero-title {
+  text-align: left;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-white-main);
 
-        margin-bottom: 32px;
-        margin-top: 50px;
-        @include tablet {
-            margin-bottom: 24px;
-            margin-top: 14px;
-        }
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  width: 247px;
 
-        @include desktop {
-            font-size: 38px;
-            line-height: calc(48 / 38);
-            width: 367px;
-            margin-bottom: 28px;
-            margin-bottom: 45px;
-        }
+  margin-bottom: 32px;
+  margin-top: 50px;
+  @include tablet {
+    margin-bottom: 24px;
+    margin-top: 14px;
+  }
+
+  @include desktop {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    width: 367px;
+    margin-bottom: 28px;
+    margin-top: 45px;
+  }
 }
-
-.hero-nav{
-display: flex;
-align-items: baseline;
-gap: 12px;
+.hero-box1{
+    @media screen and (max-width: 768px){
+        display: none;   
+       }
+       position: absolute;
+       top: 28px;
+       right: 32px;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       @include desktop {
+        top: 53px;
+       right: 13px;
+       gap: 16px;
+       }
+}
+.hero-nam{
+font-weight: 900;
+font-size: 28px;
+line-height: calc(34 / 28);
+text-align: right;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--color-black-main);
+margin-bottom: 4px;
 @include desktop {
-    gap: 32px;
+    font-weight: 900;
+font-size: 46px;
+line-height: calc(56 / 46);
+line-height: 56px;
 }
 }
-
-.hero-btns{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    align-items: center;
-text-align: center;
-
-}
-
-.hero-bt1{
-    background-color: var(--bg-green-main);
-    border: 2px solid var(--btn-defaut);
-    border-radius: 8px;
-    padding: 11px 26px;
-    &:hover{
-        border: 2px solid var(--btn-hover-focus);
+.hero-p{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    text-align: right;
+    color: var(--color-white-main);
+    @include desktop {
+        font-size: 14px;
+    line-height: calc(17 / 14);
     }
 }
-.hero-link1{
-    text-decoration:  none;
-    color: var(--color-black-accent);
+
+.hero-box2 {
+  margin-bottom: 236px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-bottom: 65px;
+  }
 }
 
-.hero-bt2{
+.hero-nav {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 0;
+  @include desktop {
+    gap: 32px;
+  }
+  @include tablet {
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-btns {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  align-items: center;
+  text-align: center;
+  @include desktop {
+    font-weight: 600;
+font-size: 14px;
+line-height: calc(18 / 14);
+  }
+}
+
+.hero-bt1 {
+  background-color: var(--bg-green-main);
+  border: 2px solid var(--btn-defaut);
+  border-radius: 8px;
+  padding: 11px 26px;
+  @include desktop {
+    padding: 12px 34px;
+  }
+  &:hover {
+    border: 2px solid var(--btn-hover-focus);
+  }
+}
+.hero-link1 {
+  text-decoration: none;
+  color: var(--color-black-accent);
+}
+
+.hero-bt2 {
+  background-color: var(--bg-green-main);
+  border: none;
+}
+
+.hero-link2 {
+  text-decoration-line: underline;
+  color: var(--btn-defaut);
+  &:hover {
+    color: var(--btn-hover-focus);
+  }
+  &:focus {
+    color: var(--color-white-main);
+  }
+  &:disabled {
+    color: var(--btn-disabled);
+  }
+}
+
+.hero-im-ice {
+    z-index: 5;
+  position: absolute;
+  top: 235px;
+  left: 83px;
+  width: 177px;
+  height: 217px;
+  background-image: url(../images/hero/ice-mob-min.png);
+  @include retina {
+    background-image: url(../images/hero/ice-mob-2x-min.png);
+  }
+  @include tablet {
+    top: 20px;
+  left: 408px;
+  width: 268px;
+  height: 329px;
+    background-image: url(../images/hero/ice-tab-min.png);
+  @include retina {
+    background-image: url(../images/hero/ice-tab-2x-min.png);
+  }
+  }
+  @include desktop {
+    top: 31px;
+    left: 652px;
+    width: 456px;
+    height: 560px;
+    background-image: url(../images/hero/ice-desk-min.png);
+  @include retina {
+    background-image: url(../images/hero/ice-desk-2x-min.png);
+  }
+  }
+
+}
+
+.hero-im-dots {
+  position: absolute;
+  top: 403px;
+  left: 0px;
+  width: 320px;
+  height: 50px;
+  background-image: url(../images/hero/dots-mob-min.png);
+  @include retina {
+    background-image: url(../images/hero/dots-mob-2x-min.png);
+  }
+  @include tablet {
+    top: 277px;
+    left: 0px;
+    width: 768px;
+    height: 68px;
+    background-image: url(../images/hero/dots-tab-min.png);
+    @include retina {
+      background-image: url(../images/hero/dots-tab-2x-min.png);
+    }
+  }
+  @include desktop {
+    top: 207px;
+    left: 0px;
+    width: 1200px;
+    height: 384px;
+    background-image: url(../images/hero/dots-desk-min.png);
+     retina {
+      background-image: url(../images/hero/dots-desk-2x-min.png);
+    }
+  }
+}
+
+.hero-dekoration{
+    @media screen and (max-width: 768px){
+     display: none;   
+    }
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+  gap: 32px;
+  @include desktop {
+    gap: 16px;
+  }
+}
+
+
+
+.hero-im-plate{
+  width: 152px;
+  height: 152px;
+  background-image: url(../images/hero/plate-tab-min.png);
+  @include retina {
+    background-image: url(../images/hero/plate-tab-2x-min.png);
+  }
+  @include desktop {
+    width: 225px;
+    height: 225px;
+    background-image: url(../images/hero/plate-desk-min.png);
+     retina {
+      background-image: url(../images/hero/plate-desk-2x-min.png);
+    }
+  }
+}
+
+.hero-text{
+width: 139px;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.4;
+color: var(--color-white-main);
+margin-bottom: 12px;
+@include desktop {
+    width: 200px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+}
+
+.arrow-bt{
     background-color: var(--bg-green-main);
     border: none;
 }
 
-.hero-link2{
-    text-decoration-line: underline;
-    color: var(--btn-defaut);
-    &:hover{
-        color: var(--btn-hover-focus);
-    }
-    &:focus{
-        color: var(--color-white-main);
-    }
-    &:disabled{
-        color: var(--btn-disabled);
-    }
-}
-
-.ice{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 177px;
-    height: 217px;
-    background-image: url(../images/hero/ice-mob-min.png);
-    @include retina {
-        background-image: url(../images/hero/ice-mob-2x-min.png);
-    }
-  
+.arrow-bt-icon{
+    fill: var(--color-white-main);
 }

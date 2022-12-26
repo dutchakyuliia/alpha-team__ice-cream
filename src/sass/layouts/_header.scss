@@ -4,21 +4,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  // padding: 12px 0;
-
-  // @include mobile {
-  //   min-width: 480px;
-  // }
-
-  // @include tablet {
-  //   max-width: 768px;
-  //   padding: 20px 32px;
-  // }
-
-  // @include desktop {
-  //   max-width: 1200px;
-  //   padding: 8px 0;
-  // }
+  
 
   background-color: var(--bg-mobile-menu);
 
@@ -32,17 +18,17 @@
   align-items: center;
 
   @include max-mobile {
-    // min-width: 480px;
+    
     padding: 12px 20px;
   }
 
   @include max-tablet {
-    // max-width: 768px;
+   
     padding: 20px 32px
   }
 
   @include desktop {
-    // max-width: 1200px;
+    
     padding: 8px 16px
   }
 
@@ -51,21 +37,6 @@
   }
 
   
-  // @media screen and (min-width: 480px) {
-  //   // max-width: 480px;
-  //   padding: 12px 20px;
-  
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   // max-width: 768px;
-  //   padding: 20px 32px
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   // max-width: 1200px;
-  //   padding: 8px 16px
-  // }
 }
 
 .button-now,
@@ -85,7 +56,7 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s  cubic-bezier(0.4, 0, 0.2, 1) ;
 
   &:hover {
     background-color: var(--btn-hover-focus);
@@ -112,9 +83,9 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 16px;
+  // position: absolute;
+  // top: 0;
+  // right: 16px;
   padding: 0;
   margin-left: auto;
   margin-top: 28px;
@@ -124,8 +95,9 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    right: 20px;
-    margin-top: 16px;
+    // right: 20px;
+    margin-top: 8px;
+    margin-right: 2px;
   }
   @media screen and (min-width: 1200px) {
     right: 19px;
@@ -148,7 +120,7 @@
   }
 }
 .logo-menu {
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  
   position: absolute;
   
   top: 12px;
@@ -167,7 +139,7 @@
 
 
 .menu-link {
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -190,12 +162,11 @@
 
 .menu-link--primary {
   color: var(--color-black-main);
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
   display: block;
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
   
 
   @media screen and (min-width: 1200px) {
@@ -256,11 +227,12 @@
 
 .menu-open {
   
+  
   @media screen and (min-width: 768px) {
     top: 20px;
     right: 216px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 }
@@ -306,9 +278,11 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
+
+ 
 }
 
 .header-link {
@@ -323,7 +297,7 @@
   font-size: 16px;
   line-height: 1.23;
   flex-direction: row;
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

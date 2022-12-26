@@ -200,7 +200,7 @@
         font-size: 16px;
     }
 }
-.Our-Locations{
+.our-Locations{
     width: 196px;
     height: 42px;
     background: #F8D24E;
@@ -218,20 +218,20 @@
     gap: 4px;
     
 }
-.Our-Locations:hover{
+.our-Locations:hover{
     background: #0A8817;
 }
-.Our-Locations:focus{
+.our-Locations:focus{
     color: #ffff; 
 }
-.Our-Locations:focus .btn-icon {
+.our-Locations:focus .btn-icon {
     fill: #ffff;
 }
-.Our-Locations:disabled{
+.our-Locations:disabled{
     background: #ABABAB;
 }
 
-.Franchise{
+.franchise{
     width: 196px;
     height: 42px;
     border: 2px solid #F8D24E;
@@ -248,17 +248,17 @@
     justify-content: center;
     gap: 4px;
 }
-.Franchise:hover{
+.franchise:hover{
     border: 2px solid #0A8817;
 }
-.Franchise:focus{
+.franchise:focus{
     border: 2px solid #0A8817;
     color: #ffff;
 }
-.Franchise:focus .btn-icon {
+.franchise:focus .btn-icon {
     fill: #ffff;
 }
-.Franchise:disabled{
+.franchise:disabled{
     border: 2px solid #ABABAB;
 }
 .btn-icon{

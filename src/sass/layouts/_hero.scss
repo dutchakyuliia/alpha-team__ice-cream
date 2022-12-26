@@ -119,7 +119,7 @@ line-height: calc(18 / 14);
   border: 2px solid var(--btn-defaut);
   border-radius: 8px;
   padding: 11px 26px;
-  transition: border 5000ms ease-in-out;
+  transition: border 500ms ease-in-out;
   &:hover {
     border: 2px solid var(--btn-hover-focus);
   }
@@ -140,20 +140,21 @@ line-height: calc(18 / 14);
 .hero-link2 {
   text-decoration-line: underline;
   color: var(--btn-defaut);
-  transition: color 5000ms ease-in-out;
-  .hero-bt2:hover & {
+  transition: color 500ms ease-in-out;
+  &:hover {
     color: var(--btn-hover-focus);
   }
-  .hero-bt2:focus & {
+  &:focus {
     color: var(--color-white-main);
   }
-  .hero-bt2:disabled & {
+  &:disabled  {
     color: var(--btn-disabled);
   }
 }
 
 .hero-im-ice {
     z-index: 5;
+    pointer-events: none;
   position: absolute;
   top: 235px;
   left: 83px;
@@ -187,6 +188,7 @@ line-height: calc(18 / 14);
 }
 
 .hero-im-dots {
+  pointer-events: none;
   position: absolute;
   top: 403px;
   left: 0px;
@@ -212,7 +214,7 @@ line-height: calc(18 / 14);
     width: 1200px;
     height: 384px;
     background-image: url(../images/hero/dots-desk-min.png);
-     retina {
+    @include retina {
       background-image: url(../images/hero/dots-desk-2x-min.png);
     }
   }

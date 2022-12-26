@@ -42,6 +42,11 @@
     margin-bottom: 28px;
   }
 }
+.hero-title-decoration{
+  @media screen and (max-width: 1199px) {
+  font-size: 32px;}
+
+}
 .hero-box1{
     @media screen and (max-width: 768px){
         display: none;   
@@ -156,6 +161,7 @@ line-height: calc(18 / 14);
     z-index: 5;
     pointer-events: none;
   position: absolute;
+  background-size: cover;
   top: 235px;
   left: 83px;
   width: 177px;
@@ -190,6 +196,7 @@ line-height: calc(18 / 14);
 .hero-im-dots {
   pointer-events: none;
   position: absolute;
+  background-size: cover;
   top: 403px;
   left: 0px;
   width: 320px;
@@ -237,6 +244,7 @@ line-height: calc(18 / 14);
 
 
 .hero-im-plate{
+  background-size: cover;
   width: 152px;
   height: 152px;
   background-image: url(../images/hero/plate-tab-min.png);

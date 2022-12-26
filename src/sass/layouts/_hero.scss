@@ -4,6 +4,17 @@
 
 .horo-container{
     position: relative;
+    padding-top: 50px;
+    padding-bottom: 236px;
+    @include tablet {
+      padding-top: 14px;
+    padding-bottom: 12px;
+    }
+    @include desktop {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
+
 }
 
 .hero-title {
@@ -20,10 +31,8 @@
   width: 247px;
 
   margin-bottom: 32px;
-  margin-top: 50px;
   @include tablet {
     margin-bottom: 24px;
-    margin-top: 14px;
   }
 
   @include desktop {
@@ -31,7 +40,6 @@
     line-height: calc(48 / 38);
     width: 367px;
     margin-bottom: 28px;
-    margin-top: 45px;
   }
 }
 .hero-box1{
@@ -78,29 +86,18 @@ line-height: 56px;
     }
 }
 
-.hero-box2 {
-  margin-bottom: 236px;
-  @include tablet {
-    margin-bottom: 12px;
-  }
-  @include desktop {
-    margin-bottom: 65px;
-  }
-}
 
 .hero-nav {
   display: flex;
   align-items: baseline;
   gap: 12px;
   margin-bottom: 0;
-  @include desktop {
-    gap: 32px;
-  }
   @include tablet {
     margin-bottom: 12px;
   }
   @include desktop {
     margin-bottom: 42px;
+    gap: 32px;
   }
 }
 
@@ -122,11 +119,12 @@ line-height: calc(18 / 14);
   border: 2px solid var(--btn-defaut);
   border-radius: 8px;
   padding: 11px 26px;
-  @include desktop {
-    padding: 12px 34px;
-  }
+  transition: border 5000ms ease-in-out;
   &:hover {
     border: 2px solid var(--btn-hover-focus);
+  }
+  @include desktop {
+    padding: 12px 34px;
   }
 }
 .hero-link1 {
@@ -142,13 +140,14 @@ line-height: calc(18 / 14);
 .hero-link2 {
   text-decoration-line: underline;
   color: var(--btn-defaut);
-  &:hover {
+  transition: color 5000ms ease-in-out;
+  .hero-bt2:hover & {
     color: var(--btn-hover-focus);
   }
-  &:focus {
+  .hero-bt2:focus & {
     color: var(--color-white-main);
   }
-  &:disabled {
+  .hero-bt2:disabled & {
     color: var(--btn-disabled);
   }
 }
@@ -246,7 +245,7 @@ line-height: calc(18 / 14);
     width: 225px;
     height: 225px;
     background-image: url(../images/hero/plate-desk-min.png);
-     retina {
+    @include retina {
       background-image: url(../images/hero/plate-desk-2x-min.png);
     }
   }

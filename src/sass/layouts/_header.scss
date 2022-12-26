@@ -1,13 +1,5 @@
 .header {
-  display: flex;
-  align-items: center;
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  
-
-  background-color: var(--bg-mobile-menu);
-
   @media screen and (min-width: 768px) {
     background-color: var(--bg-desktop);
   }
@@ -18,30 +10,24 @@
   align-items: center;
 
   @include max-mobile {
-    
     padding: 12px 20px;
   }
 
   @include max-tablet {
-   
-    padding: 20px 32px
+    padding: 20px 32px;
   }
 
   @include desktop {
-    
-    padding: 8px 16px
+    padding: 8px 16px;
   }
 
   @media screen and (min-width: 320px) {
     padding: 12px 20px;
   }
-
-  
 }
 
 .button-now,
 .button-buy-now {
-  margin-top: auto;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -53,16 +39,11 @@
   border-radius: 10px;
   height: 42px;
   width: 152px;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s  cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    background-color: var(--btn-hover-focus);
-  }
-
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--btn-hover-focus);
     color: var(--color-white-accent);
   }
@@ -73,6 +54,9 @@
 }
 
 .button-now {
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -83,11 +67,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  // position: absolute;
-  // top: 0;
-  // right: 16px;
-  padding: 0;
-  margin-left: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 28px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -95,34 +76,22 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    // right: 20px;
     margin-top: 8px;
-    margin-right: 2px;
   }
   @media screen and (min-width: 1200px) {
-    right: 19px;
     margin-top: 28px;
+    margin-left: auto;
   }
 }
 
-.button-icon {
-  fill: currentColor;
-  &:hover svg {
-    color: var(--color-black-accent);
-  }
 
-  &:focus svg {
-    color: var(--color-white-accent);
-  }
-
-  &:disabled svg {
-    color: var(--color-black-accent);
-  }
+.menu-icon {
+ fill: currentColor; 
 }
+
 .logo-menu {
-  
   position: absolute;
-  
+
   top: 12px;
   left: 18px;
 
@@ -137,9 +106,8 @@
   }
 }
 
-
 .menu-link {
-  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -162,15 +130,13 @@
 
 .menu-link--primary {
   color: var(--color-black-main);
-  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
   display: block;
-  
 
   @media screen and (min-width: 1200px) {
-    
     margin-right: 308px;
   }
 }
@@ -197,11 +163,6 @@
 }
 .menu-open,
 .menu-close {
-  
-  position: absolute;
-  top: 16px;
-  right: 20px;
-
   display: flex;
 
   justify-content: center;
@@ -209,15 +170,29 @@
   align-items: center;
   width: 32px;
   height: 32px;
-  background-color: var(--bg-mobile-menu);
+  background-color: transparent;
   border: none;
   cursor: pointer;
   text-align: center;
-  margin-left: auto;
   padding: 0;
-  fill: var(--color-white-accent);
-
+  color: var(--color-white-accent);
   border-color: transparent;
+    &:hover {
+      color: var(--color-black-accent);
+    }
+  
+    &:focus {
+      color: var(--color-white-accent);
+    }
+  
+    &:disabled {
+      color: var(--color-black-accent);
+    }
+}
+.menu-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
 
   @media screen and (min-width: 768px) {
     top: 20px;
@@ -226,13 +201,11 @@
 }
 
 .menu-open {
-  
-  
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 216px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 32px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1199px) {
     display: none;
   }
 }
@@ -257,16 +230,11 @@
 
   overflow: auto;
   transform: translateX(0);
-  transition: transform 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-hidden {
     transform: translateX(-100%);
-    
-    
   }
-  
-  
 
   @media screen and (min-width: 1200px) {
     display: none;
@@ -281,8 +249,6 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
-
- 
 }
 
 .header-link {
@@ -297,15 +263,13 @@
   font-size: 16px;
   line-height: 1.23;
   flex-direction: row;
-  transition: color 0.5s  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: var(--color-yellow);
   }
 }
-
-
 
 .header-list {
   display: inline-flex;

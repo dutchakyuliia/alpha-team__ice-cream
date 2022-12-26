@@ -39,6 +39,9 @@
   transition: 0.3s all;
 }
 
+.modal-product {
+  position: absolute; 
+}
 /* Стили для активных классов подложки и окна */
 
 .modal.active,

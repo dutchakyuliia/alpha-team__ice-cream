@@ -114,6 +114,12 @@
   background-color: rgba(248, 210, 78, 0.1);
   margin-bottom: 12px;
   padding-left: 12px;
+  outline: transparent;
+
+  &:focus {
+    border: 2px solid #84A178;
+
+  }
 
   @include tablet {
     width: 368px;
@@ -148,6 +154,11 @@
   padding: 8px 12px;
   margin-bottom: 24px;
   resize: none;
+  outline: transparent;
+
+  &:focus {
+      border: 2px solid #84A178;
+  }
 
   @include tablet {
       width: 368px;

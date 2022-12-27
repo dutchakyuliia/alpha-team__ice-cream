@@ -1,3 +1,29 @@
+
+.customer__container {
+  position: relative;
+  height: 100%;
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+//-------------------------------------------------- SLIDER STYLES------------------------------------------
 .customer-reviews {
   position: relative;
   padding-bottom: 361px;
@@ -12,64 +38,13 @@
     padding-bottom: 228px;
     background-image: url(../images/background/background-dekstop.jpg);
   }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 320px;
-
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-      padding-left: 94px;
-      padding-right: 94px;
-    }
-  }
 }
 
-.customer-reviews__list {
-  position: relative;
-  top: 464px;
+ .picture {
+  border-radius: 50%;
   overflow: hidden;
-
-  @media screen and (min-width: 768px) {
-    top: 283px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 178px;
-  }
-
-  .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    li.slick-active button {
-      background-color: var(--fill-soc-defaut);
-    }
-  }
-  .slick-dots button {
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--bg-img-grey);
-    border-color: transparent;
-  }
-  .customer-reviews__item {
-    opacity: 1;
-    text-align: center;
-    transition: opacity 0.3s ease-in-out 0s;
-  }
-  .customer-reviews__item.slick-active {
-    opacity: 1;
-  }
-}
+ }
+  
 
 .customer-reviews__container {
   display: flex;

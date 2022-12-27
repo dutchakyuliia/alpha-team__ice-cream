@@ -1,9 +1,21 @@
-$(document).ready(function () {
-  $('.customer-reviews__list').slick({
-    arrows: false,
-    dots: true,
-    adaptiveHeight: true,
-    speed: 500,
-    easing: 'ease-in-out',
-  });
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  //   direction: 'vertical',
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // что-бы сделать пагинацию кликабельной
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });
+

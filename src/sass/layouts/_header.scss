@@ -249,11 +249,11 @@
   flex-direction: column;
 
   overflow: auto;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.is-open {
-    transform: translateX(0);
+  &.is-hidden {
+    transform: translateX(-100%);
   }
 
   @media screen and (min-width: 1200px) {

@@ -543,6 +543,17 @@
 
 /*локація */
 
+.location-foto {
+  max-width: 224px;
+  max-height: 199px;
+  border-radius: 10px;
+
+  @include tablet {
+      max-width: 448px;
+      max-height: 260px;
+    }
+}
+
 @include tablet {
   .location-foto {
     width: 448px;

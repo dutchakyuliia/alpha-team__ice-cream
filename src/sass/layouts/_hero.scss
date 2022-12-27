@@ -59,7 +59,7 @@
 
 }
 .hero-box1{
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
         display: none;   
        }
        position: absolute;
@@ -145,11 +145,20 @@ line-height: calc(18 / 14);
   }
   @include desktop {
     padding: 12px 34px;
+  &:focus{
+    border: 2px solid var(--btn-hover-focus);
+  }
+  &:disabled{
+    border: 2px solid var(--btn-disabled);
+  }
   }
 }
 .hero-link1 {
   text-decoration: none;
   color: var(--color-black-accent);
+  @include desktop {
+    &:focus{color: var(--color-white-main);}
+  }
 }
 
 .hero-bt2 {
@@ -258,7 +267,7 @@ line-height: calc(18 / 14);
 }
 
 .hero-dekoration{
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
      display: none;   
     }
     position: relative;

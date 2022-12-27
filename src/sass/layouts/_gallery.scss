@@ -52,10 +52,9 @@
 }
 
 .gallery-picture {
-  transition: image 500ms linear 1000ms;
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   overflow: hidden;
   @media screen and (max-width: 767px) {
     border-radius: 8px;
@@ -69,14 +68,25 @@
     border-radius: 24px;
   }
 }
-.img {
-  background: url(../images/gallery/to-much-mobile.jpg);
-  transition-property: background-color, transform;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
-  &:hover {
-    background-color: teal;
-    transform: rotate(180deg);
+
+.gallery-slider-beckground {
+  position: relative;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    bottom: 32px;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 144px;
+    padding: 0 32px;
+    width: 704px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 98px;
+    padding: 0 94px;
+    width: 1013px;
   }
 }

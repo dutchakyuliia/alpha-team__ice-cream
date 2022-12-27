@@ -15,21 +15,7 @@
 }
 
 .container-advantages{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    outline: 2px solid red;
 }
 
 .advantages-item {
@@ -47,9 +33,12 @@ position: relative;
 .advantages-list{
     margin-left: auto;
     margin-right: auto;
-
+display: flex;
+flex-direction: column;
+gap:28px;
     @include tablet{
-        display: flex;
+        flex-direction: row;
+        justify-content: center;
         gap: 80px;
     }
     @include desktop{
@@ -67,20 +56,17 @@ position: relative;
     text-transform: uppercase;
     color:var(--color-white-main);
     margin-bottom: 16px;
-    margin-top: 16px;
     display: block;
 
     @include tablet{
         font-size: 48px;
         line-height: 1.23;
-        margin-top: 0;
         margin-bottom: 12px;
         
     }
     @include desktop{
         font-size: 58px;
         line-height: 1.22;
-        margin-top: 0;
     }
 }
 
@@ -88,21 +74,24 @@ position: relative;
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
-line-height: 170%;
+line-height: 1.67;
 text-align: center;
 color:var(--color-white-main);
 
 
 @include tablet{
+    font-weight: 400;
     font-size: 14px;
-    line-height: 174%;
-    
+    line-height: 1.23;
+  width: 152px;  
 }
 @include desktop{
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.75;
     letter-spacing: 0.02em;
+    width: 368px;
 }
+
 }
 
 .advantages-title-cow::before {
@@ -124,12 +113,14 @@ color:var(--color-white-main);
         background-image: url(../images/advantages/cow-2x-min.png);
         background-size: 36px 36px;
     }
-    @include tablet{
-        margin-bottom: 32px;
-    }
-    @include desktop{
-        margin-bottom: 40px;
-    }
+   @include tablet {
+
+       margin-bottom: 32px;
+   }
+
+   @include desktop {
+       margin-bottom: 40px;
+   }
 }
 
 .advantages-title-weight::before {
@@ -146,19 +137,19 @@ color:var(--color-white-main);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
-    margin-top: 28px;
 
     @include retina{
         background-image: url(../images/advantages/weight-2x-min.png);
         background-size: 36px 36px;
     }
-    @include tablet{
-        margin-top: 0;
-        margin-bottom: 32px;
-    }
-    @include desktop{
-        margin-bottom: 40px;
-    }
+   @include tablet {
+
+       margin-bottom: 32px;
+   }
+
+   @include desktop {
+       margin-bottom: 40px;
+   }
 }
 
 .advantages-title-ice::before {
@@ -175,14 +166,14 @@ color:var(--color-white-main);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
-    margin-top: 28px;
+    
 
     @include retina{
         background-image: url(../images/advantages/ice-cream-2x-min.png);
         background-size: 36px 36px;
     }
     @include tablet{
-        margin-top: 0;
+        
         margin-bottom: 32px;
     }
     @include desktop{

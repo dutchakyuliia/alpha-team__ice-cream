@@ -266,6 +266,7 @@
     background: var(--btn-hover-focus);
     color: var(--fill-soc-hover-focus);
     fill: var(--fill-soc-hover-focus);
+    outline: transparent;
     transform: background, color, fill;
   }
 }

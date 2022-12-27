@@ -58,7 +58,6 @@
   width: 280px;
   max-width: 100%;
   max-height: 100%;
-  overflow-y: scroll;
   padding: 28px;
   border-radius: 10px;
   border: 2px solid #F8D24E;
@@ -203,6 +202,7 @@
 @include  max-mobile {
   .modal-buy-now {
      height: 675px;
+     overflow-y: scroll;     
       }
 }
 
@@ -310,6 +310,7 @@
 /*product*/
 .modal-product {
   height: 675px;
+  overflow-y: scroll;
 
   @include tablet {
     height: 630px;
@@ -541,6 +542,12 @@
 }
 
 /*франчайзинг */
+@include max-mobile {
+  .modal-franchise {
+    height: 675px;
+    overflow-y: scroll;
+  }
+}
 
 
 .modal-franchise .modal-text {

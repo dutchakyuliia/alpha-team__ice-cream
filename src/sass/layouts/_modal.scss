@@ -270,18 +270,21 @@
   width: 132px;
   height: 132px;
   border-radius: 50%;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  z-index: 20;
 }
 .ice-cream-foto {
   background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .ice-coffee-foto {
   background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .milkshake-foto {
   background-image: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
 .buy-now-foto {
@@ -364,6 +367,18 @@
   background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
+  &.orang-coffee {
+    background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
+  }
+
+  &.milkshake-oreo {    
+    background-image: linear-gradient(rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    
+  }
+
   @include tablet {
     margin-bottom: 24px;
   }
@@ -396,6 +411,14 @@
   font-size: 10px;
   line-height: 1.2;
 
+  &.orang-coffee {
+      border: 2px solid #EFD478;
+    }
+
+  &.milkshake-oreo {
+    border: 2px solid #D6936D;
+  }
+
   @include tablet {
     width: 65px;
     height: 90px;
@@ -424,6 +447,19 @@
   font-size: 10px;
   line-height: 2.8;
   color: var(--color-black-main);
+
+  &.orang-coffee {
+    border: 2px solid #EFD478;
+    background-color: #EFD478;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  &.milkshake-oreo {
+    border: 2px solid #D6936D;
+    background-color: #D6936D;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+
+  }
   
   @include tablet {
     width: 53px;

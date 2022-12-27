@@ -26,7 +26,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5) skew(45deg);
   z-index: 30;
   /* Должен быть выше чем у подложки*/
 
@@ -46,6 +46,10 @@
 .overlay.active {
   opacity: 1;
   visibility: visible; 
+  
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1) skew(0deg);
 }
 
 /*загальні стилі */
@@ -116,6 +120,8 @@
   padding-left: 12px;
   outline: transparent;
 
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus {
     border: 2px solid #84A178;
 
@@ -155,6 +161,8 @@
   margin-bottom: 24px;
   resize: none;
   outline: transparent;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
       border: 2px solid #84A178;
@@ -239,14 +247,17 @@
 
 .ice-cream-element {
   border: 2px solid #96AF8C;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ice-coffee-element {
   border: 2px solid #EFD478;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .milkshake-element {
   border: 2px solid #D6936D;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-foto-container {

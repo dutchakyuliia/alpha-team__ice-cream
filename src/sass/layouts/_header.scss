@@ -44,14 +44,13 @@
     background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-      background-color: var(--btn-hover-focus);
+    background-color: var(--btn-hover-focus);
   }
-  
+
   &:focus {
-     background-color: var(--btn-hover-focus);
-      color: var(--color-white-accent);
+    background-color: var(--btn-hover-focus);
+    color: var(--color-white-accent);
   }
-  
 
   &:disabled {
     background-color: var(--btn-disabled);
@@ -93,23 +92,18 @@
   &:hover svg {
     color: var(--color-black-accent);
   }
-  
+
   &:focus svg {
     color: var(--color-white-accent);
   }
-  
+
   &:disabled svg {
     color: var(--color-black-accent);
   }
-
 }
 
-
 .menu-icon {
- fill: currentColor; 
-
- 
-
+  fill: currentColor;
 }
 
 .logo-menu {
@@ -125,7 +119,6 @@
 
   @media screen and (min-width: 320px) {
     top: 14px;
-    
   }
 }
 
@@ -150,8 +143,6 @@
     color: var(--color-black-main);
   }
 }
-
-
 
 .logo {
   display: block;
@@ -197,17 +188,17 @@
   padding: 0;
   color: var(--color-white-accent);
   border-color: transparent;
-    &:hover {
-      color: var(--color-black-accent);
-    }
-  
-    &:focus {
-      color: var(--color-yellow);
-    }
-  
-    &:disabled {
-      color: var(--color-black-accent);
-    }
+  &:hover {
+    color: var(--color-black-accent);
+  }
+
+  &:focus {
+    color: var(--color-yellow);
+  }
+
+  &:disabled {
+    color: var(--color-black-accent);
+  }
 }
 .menu-close {
   position: absolute;
@@ -249,11 +240,11 @@
   flex-direction: column;
 
   overflow: auto;
-  transform: translateX(0);
+  transform: translateX(-100%);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &.is-hidden {
-    transform: translateX(-100%);
+  &.is-open {
+    transform: translateX(0);
   }
 
   @media screen and (min-width: 1200px) {

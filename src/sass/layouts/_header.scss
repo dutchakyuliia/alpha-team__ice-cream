@@ -43,10 +43,15 @@
   transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover, &:focus {
-    background-color: var(--btn-hover-focus);
-    color: var(--color-white-accent);
+  &:hover {
+      background-color: var(--btn-hover-focus);
   }
+  
+  &:focus {
+     background-color: var(--btn-hover-focus);
+      color: var(--color-white-accent);
+  }
+  
 
   &:disabled {
     background-color: var(--btn-disabled);
@@ -67,8 +72,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  // padding-top: 12px;
+  // padding-bottom: 12px;
   margin-top: 28px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -83,10 +88,28 @@
     margin-left: auto;
   }
 }
+.button-icon {
+  fill: currentColor;
+  &:hover svg {
+    color: var(--color-black-accent);
+  }
+  
+  &:focus svg {
+    color: var(--color-white-accent);
+  }
+  
+  &:disabled svg {
+    color: var(--color-black-accent);
+  }
+
+}
 
 
 .menu-icon {
  fill: currentColor; 
+
+ 
+
 }
 
 .logo-menu {
@@ -102,7 +125,7 @@
 
   @media screen and (min-width: 320px) {
     top: 14px;
-    // left: 29px;
+    
   }
 }
 
@@ -128,10 +151,7 @@
   }
 }
 
-.menu-link--primary {
-  color: var(--color-black-main);
-  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .logo {
   display: block;
@@ -182,7 +202,7 @@
     }
   
     &:focus {
-      color: var(--color-white-accent);
+      color: var(--color-yellow);
     }
   
     &:disabled {
@@ -220,7 +240,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-mobile-menu);

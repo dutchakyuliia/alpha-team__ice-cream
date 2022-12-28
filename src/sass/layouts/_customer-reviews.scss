@@ -33,7 +33,7 @@
 //-------------------------------------------------- SLIDER STYLES------------------------------------------
 .customer {
   position: relative;
-  padding-top: 80px;
+  padding-top: 178px;
   padding-bottom: 361px;
   background-image: url(../images/background/backgroud_mobile.jpg);
   background-repeat: no-repeat;
@@ -52,13 +52,13 @@
   @include tablet {
     background-image: url(../images/background/background-dekstop.jpg);
 padding-bottom: 228px;
-padding-top: 100px;
+padding-top: 286px;
     @include retina {
       background-image: url(../images/background/background-dekstop@2x.jpg);
     }
   }
   @include desktop {
-    padding-top: 140px;
+    padding-top: 464px;
   }
 }
 

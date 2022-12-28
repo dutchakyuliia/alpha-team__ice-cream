@@ -82,7 +82,8 @@
     @media screen and (min-width: 768px) {
       margin-top: 8px;}
     @media screen and (min-width: 1200px) {
-        margin-top: 28px;}}
+        margin-top: 28px;
+      margin-left: auto;}}
 
 
 // .header__buy-now {
@@ -188,6 +189,9 @@
   &:disabled {
     color: var(--color-black-accent);
   }
+}
+.menu-icon{
+  fill: currentColor;
 }
 .menu-close {
   position: absolute;

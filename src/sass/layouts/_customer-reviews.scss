@@ -41,7 +41,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+ padding-bottom: 60px;
   @include retina {
     background-image: url(../images/background/backgroud_mobile@2x.jpg);
   }
@@ -54,7 +54,7 @@
     }
   }
   @include desktop {
-    // padding-bottom: 228px;
+   
     padding-top: 464px;
 
     background-image: url(../images/background/background-dekstop.jpg);

@@ -3,20 +3,20 @@
   // @include tablet {
   //   background-color: var(--bg-desktop);
   // }
-}
-
-.header-container {
-  display: flex;
-  align-items: flex-end;
   padding-top: 12px;
 
   @include tablet {
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   @include desktop {
     padding-top: 8px;
   }
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-end;
 }
 
 .buy-now {

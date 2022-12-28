@@ -48,7 +48,6 @@
     background-color: var(--btn-hover-focus);
     color: var(--color-white-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    outline: transparent;
   }
   &:disabled {
     background-color: var(--btn-disabled);
@@ -99,16 +98,10 @@
 //   }
 // }
 
-.button-icon {
+.menu-icon {
   fill: currentColor;
 }
 
-.logo-menu {
-  padding-top: 51px;
-  @include tablet {
-    padding-top: 76px;
-  }
-}
 .menu-nav {
   padding-top: 51px;
   @include tablet {
@@ -280,7 +273,6 @@
   &:hover,
   &:focus {
     color: var(--color-yellow);
-    outline: transparent;
   }
 }
 

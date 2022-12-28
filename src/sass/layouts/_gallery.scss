@@ -39,7 +39,7 @@
   }
 
   92% {
-    opacity: 0;
+    opacity: 1;
   }
 
   100% {
@@ -76,7 +76,7 @@
       animation-name: change;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
-      animation-duration: 8s;
+      animation-duration: 9s;
       animation-direction: alternate;
     
 }

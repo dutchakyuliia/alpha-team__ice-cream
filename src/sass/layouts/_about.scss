@@ -1,17 +1,12 @@
 .about {
   padding-top: 61px;
   padding-bottom: 0px;
-  background-color: #84a178;
-  // outline: 1px solid orange;
 
   @include tablet {
     padding-top: 60px;
   }
   @include desktop {
     padding-top: 60px;
-  }
-  &-container {
-    // outline: 1px solid tomato;
   }
 
   &-label {

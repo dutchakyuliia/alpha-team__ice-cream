@@ -1,5 +1,5 @@
 .products {
-  padding-top: 60px;
+  padding-top: 61px;
   padding-bottom: 60px;
   color: var(--color-black-main);
   text-align: center;
@@ -10,13 +10,14 @@
   @include retina {
     background-image: url(../images/background/backgroud_mobile@2x.jpg);
   }
-  @include mobile {
+  @include tablet {
+    padding-top: 60px;
     background-image: url(../images/background/background-tablet.jpg);
     @include retina {
       background-image: url(../images/background/background-tablet@2x.jpg);
     }
   }
-  @include tablet {
+  @include desktop {
     background-image: url(../images/background/background-dekstop.jpg);
     @include retina {
       background-image: url(../images/background/background-dekstop@2x.jpg);

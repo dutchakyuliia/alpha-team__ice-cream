@@ -26,7 +26,7 @@
   left: 0;
   width: 100%;
   @include desktop {
-  left: 0;
+    left: 0;
   }
 }
 
@@ -34,31 +34,33 @@
 .customer {
   position: relative;
   padding-top: 178px;
-  padding-bottom: 361px;
+  // padding-bottom: 361px;
+  padding-bottom: 0;
+
   background-image: url(../images/background/backgroud_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+ padding-bottom: 60px;
   @include retina {
     background-image: url(../images/background/backgroud_mobile@2x.jpg);
   }
-  @include mobile {
+  @include tablet {
+    padding-top: 283px;
     background-image: url(../images/background/background-tablet.jpg);
 
     @include retina {
       background-image: url(../images/background/background-tablet@2x.jpg);
     }
   }
-  @include tablet {
+  @include desktop {
+   
+    padding-top: 464px;
+
     background-image: url(../images/background/background-dekstop.jpg);
-padding-bottom: 228px;
-padding-top: 286px;
     @include retina {
       background-image: url(../images/background/background-dekstop@2x.jpg);
     }
-  }
-  @include desktop {
-    padding-top: 464px;
   }
 }
 
@@ -83,7 +85,7 @@ padding-top: 286px;
   line-height: 2.55;
   color: var(--fill-soc-hover-focus);
   text-align: center;
-min-width: 280px;
+  min-width: 280px;
   background-color: var(--fill-soc-defaut);
   border-radius: 10px;
 

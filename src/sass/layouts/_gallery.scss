@@ -1,108 +1,81 @@
-.gallery-container {
-  width: 100%;
+.gallery {
   @media screen and (max-width: 767px) {
-    margin-top: 32px;
-    height: 98px;
-    background-image: url(../images/background/backgroud_mobile.jpg),
-      url(../images/background/backgroud_mobile@2x.jpg);
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: 144px;
-    height: 183px;
-    background-image: url(../images/background/background-tablet.jpg),
-      url(../images/background/background-tablet@2x.jpg);
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 98px;
-    height: 324px;
-    background-image: url(../images/background/background-dekstop.jpg),
-      url(../images/background/background-dekstop@2x.jpg);
-  }
-
-  // @media (min-device-pixel-ratio: 2),
-  //  (min-resolution: 192dpi),
-  // (min-resolution: 2dppx) {
-  //  background-image: url(../images/background/backgroud_mobile.webp),
-  //   url(../images/background/backgroud_mobile@2x.webp);
-  // }
+      padding-bottom: 32px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding-bottom: 144px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 98px;
+    }
 }
 
-.gallery-block {
-  animation-name: gallery;
+.gallery-container {
   position: relative;
-  margin: 0 auto;
-  @media screen and (max-width: 767px) {
-    bottom: 32px;
-    padding: 0 20px;
-    width: 280px;
+  width: 100%;
+}
+
+@keyframes change {
+  0% {
+    opacity: 1;
   }
 
-  @media screen and (min-width: 768px) {
-    bottom: 144px;
-    padding: 0 32px;
-    width: 704px;
+  17% {
+    opacity: 1;
   }
 
-  @media screen and (min-width: 1200px) {
-    bottom: 98px;
-    padding: 0 94px;
-    width: 1013px;
+  25% {
+    opacity: 0;
+  }
+50%{
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 .gallery-picture {
-  display: block;
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-  @media screen and (max-width: 767px) {
-    border-radius: 8px;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-radius: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    border-radius: 24px;
-  }
-}
-
-.to-much {
-  position: relative;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translateX(50%);
   z-index: 2;
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      border-radius: 8px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      border-radius: 18px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      border-radius: 24px;
+    }
+      animation-name: change;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;
+      animation-direction: alternate;
+    
 }
 
-.slider-beck {
-  position: relative;
-  z-index: 1;
-  bottom: 343px;
+.photo-first {
+  animation-delay: 6s;
 }
 
-.slider-beckground {
-  position: relative;
-  bottom: 687px;
+.photo-second {
+  animation-delay: 3s;
 }
-@keyframes gallery {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.photo-third {
+  animation-delay: 0s;
 }
-.gallery-block .gallery-picture {
-  animation-name: gallery;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 7s;
-  animation-direction: alternate;
-}
+

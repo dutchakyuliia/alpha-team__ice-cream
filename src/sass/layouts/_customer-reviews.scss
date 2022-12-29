@@ -35,7 +35,7 @@
   position: relative;
   padding-top: 178px;
   // padding-bottom: 361px;
-  padding-bottom: 0;
+  // padding-bottom: 0;
 
   background-image: url(../images/background/backgroud_mobile.jpg);
   background-repeat: no-repeat;
@@ -78,26 +78,30 @@
   gap: 32px;
 }
 
-.customer-reviews__text {
-  padding: 35px 40px;
+.customer-reviews__text {  
+  display: flex;
+  height: 256px;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 39px;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.55;
   color: var(--fill-soc-hover-focus);
-  text-align: center;
-  min-width: 280px;
+   min-width: 280px;
   background-color: var(--fill-soc-defaut);
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
-    padding: 30px 80px;
+    height: 138px;
+    padding: 28px 80px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
   }
   @media screen and (min-width: 1200px) {
     min-width: 968px;
-    padding: 43px 110px;
+    padding: 42px 73px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.86;

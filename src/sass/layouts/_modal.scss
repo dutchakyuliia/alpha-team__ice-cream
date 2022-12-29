@@ -325,6 +325,9 @@
 .modal-product {
   height: 675px;
   overflow-y: scroll;
+  & img {
+    height: 100%;
+  }
 
   @include tablet {
     height: 630px;

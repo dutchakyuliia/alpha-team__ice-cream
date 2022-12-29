@@ -46,6 +46,7 @@
   }
   @include tablet {
     padding-top: 379px;
+    padding-bottom: 379px;
     background-image: url(../images/background/background-tablet.jpg);
 
     @include retina {
@@ -54,6 +55,7 @@
   }
   @include desktop {
     padding-top: 464px;
+    padding-bottom: 228px;
 
     background-image: url(../images/background/background-dekstop.jpg);
     @include retina {

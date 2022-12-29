@@ -12,21 +12,19 @@
 
 .horo-container {
   position: relative;
-  // padding-top: 50px;
   padding-bottom: 236px;
   @include mobile {
     width: 480px;
-    // padding-bottom: 330px;
   }
-
+ @media screen and (min-width: 480px) and (max-width: 767px) {
+  padding-bottom: 315px;
+ }
   @include tablet {
     width: 768px;
-    // padding-top: 14px;
     padding-bottom: 12px;
   }
   @include desktop {
     width: 1200px;
-    // padding-top: 45px;
     padding-bottom: 65px;
   }
 }
@@ -198,6 +196,8 @@
   width: 177px;
   height: 217px;
   background-image: url(../images/hero/ice-mob-min.png);
+
+ 
   @include retina {
     background-image: url(../images/hero/ice-mob-2x-min.png);
   }
@@ -208,6 +208,7 @@
     width: 265.5px;
     height: 325.5px;
   }
+  
   @include tablet {
     bottom: 0px;
     left: 408px;

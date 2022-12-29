@@ -34,19 +34,18 @@
 .customer {
   position: relative;
   padding-top: 178px;
-  // padding-bottom: 361px;
-  padding-bottom: 0;
+  padding-bottom: 409px;
 
   background-image: url(../images/background/backgroud_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- padding-bottom: 60px;
+
   @include retina {
     background-image: url(../images/background/backgroud_mobile@2x.jpg);
   }
   @include tablet {
-    padding-top: 283px;
+    padding-top: 379px;
     background-image: url(../images/background/background-tablet.jpg);
 
     @include retina {
@@ -54,7 +53,6 @@
     }
   }
   @include desktop {
-   
     padding-top: 464px;
 
     background-image: url(../images/background/background-dekstop.jpg);

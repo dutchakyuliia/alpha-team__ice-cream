@@ -34,7 +34,7 @@
 .customer {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 409px;
+  padding-bottom: 60px;
 
   // background-image: url(../images/background/backgroud_mobile.jpg);
   // background-repeat: no-repeat;
@@ -46,7 +46,7 @@
   // }
   @include tablet {
     padding-top: 100px;
-    padding-bottom: 379px;
+    padding-bottom: 80px;
     // background-image: url(../images/background/background-tablet.jpg);
 
     // @include retina {
@@ -55,7 +55,7 @@
   }
   @include desktop {
     padding-top: 140px;
-    padding-bottom: 228px;
+    padding-bottom: 100px;
 
     // background-image: url(../images/background/background-dekstop.jpg);
     // @include retina {

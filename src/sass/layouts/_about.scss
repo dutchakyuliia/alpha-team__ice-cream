@@ -1,6 +1,7 @@
 .about {
   padding-top: 61px;
   padding-bottom: 0px;
+  background-image: linear-gradient(var(--bg-green-main), var(--bg-green-main));
 
   @include tablet {
     padding-top: 60px;

@@ -1,8 +1,7 @@
 .header {
   position: relative;
-  @include tablet {
-    background-color: var(--bg-desktop);
-  }
+
+  background-color: var(--bg-desktop);
 }
 
 .header-container {

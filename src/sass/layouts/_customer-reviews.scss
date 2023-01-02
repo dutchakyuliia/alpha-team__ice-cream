@@ -33,34 +33,34 @@
 //-------------------------------------------------- SLIDER STYLES------------------------------------------
 .customer {
   position: relative;
-  padding-top: 178px;
+  padding-top: 80px;
   padding-bottom: 409px;
 
-  background-image: url(../images/background/backgroud_mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-image: url(../images/background/backgroud_mobile.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
-  @include retina {
-    background-image: url(../images/background/backgroud_mobile@2x.jpg);
-  }
+  // @include retina {
+  //   background-image: url(../images/background/backgroud_mobile@2x.jpg);
+  // }
   @include tablet {
-    padding-top: 379px;
+    padding-top: 100px;
     padding-bottom: 379px;
-    background-image: url(../images/background/background-tablet.jpg);
+    // background-image: url(../images/background/background-tablet.jpg);
 
-    @include retina {
-      background-image: url(../images/background/background-tablet@2x.jpg);
-    }
+    // @include retina {
+    //   background-image: url(../images/background/background-tablet@2x.jpg);
+    // }
   }
   @include desktop {
-    padding-top: 464px;
+    padding-top: 140px;
     padding-bottom: 228px;
 
-    background-image: url(../images/background/background-dekstop.jpg);
-    @include retina {
-      background-image: url(../images/background/background-dekstop@2x.jpg);
-    }
+    // background-image: url(../images/background/background-dekstop.jpg);
+    // @include retina {
+    //   background-image: url(../images/background/background-dekstop@2x.jpg);
+    // }
   }
 }
 
@@ -78,7 +78,7 @@
   gap: 32px;
 }
 
-.customer-reviews__text {  
+.customer-reviews__text {
   display: flex;
   height: 256px;
   justify-content: center;
@@ -88,7 +88,7 @@
   font-size: 12px;
   line-height: 2.55;
   color: var(--fill-soc-hover-focus);
-   min-width: 280px;
+  min-width: 280px;
   background-color: var(--fill-soc-defaut);
   border-radius: 10px;
 

@@ -1,5 +1,11 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -38,9 +44,39 @@ a {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: Montserrat, sans-serif;
-  background: var(--bg-green-main);
+  // background: var(--bg-green-main);
   overflow-x: hidden;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  // overflow: hidden;
+
+  background-image: url(../images/background/backgroud_mobile.jpg);
+
+  @include retina {
+    background-image: url(../images/background/backgroud_mobile@2x.jpg);
+    background-size: 279px 278px;
+  }
+  @include tablet {
+    background-image: url(../images/background/background-tablet.jpg);
+    @include retina {
+      background-image: url(../images/background/background-tablet@2x.jpg);
+      background-size: 330px 330px;
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/background/background-dekstop.jpg);
+    @include retina {
+      background-image: url(../images/background/background-dekstop@2x.jpg);
+      background-size: 490px 490px;
+    }
+  }
 }
 
 .hidden {
@@ -65,4 +101,3 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-

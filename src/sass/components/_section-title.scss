@@ -12,3 +12,7 @@
     @include font(400, 36px, calc(45 / 36), 0.06em);
   }
 }
+
+section {
+  outline: 1px solid orange;
+}

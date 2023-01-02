@@ -3,25 +3,25 @@
   padding-bottom: 60px;
   color: var(--color-black-main);
   text-align: center;
-  background-image: url(../images/background/backgroud_mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  @include retina {
-    background-image: url(../images/background/backgroud_mobile@2x.jpg);
-  }
+  // background-image: url(../images/background/backgroud_mobile.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // @include retina {
+  //   background-image: url(../images/background/backgroud_mobile@2x.jpg);
+  // }
   @include tablet {
     padding-top: 60px;
-    background-image: url(../images/background/background-tablet.jpg);
-    @include retina {
-      background-image: url(../images/background/background-tablet@2x.jpg);
-    }
+    // background-image: url(../images/background/background-tablet.jpg);
+    // @include retina {
+    //   background-image: url(../images/background/background-tablet@2x.jpg);
   }
+
   @include desktop {
-    background-image: url(../images/background/background-dekstop.jpg);
-    @include retina {
-      background-image: url(../images/background/background-dekstop@2x.jpg);
-    }
+    // background-image: url(../images/background/background-dekstop.jpg);
+    // @include retina {
+    //   background-image: url(../images/background/background-dekstop@2x.jpg);
+    // }
   }
 }
 .products-label {

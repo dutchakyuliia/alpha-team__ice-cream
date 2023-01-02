@@ -33,16 +33,14 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 280px;
+
   @include tablet {
     margin-bottom: 40px;
     flex-direction: row;
     justify-content: center;
-    width: 768px;
   }
   @include desktop {
     margin-bottom: 60px;
-    width: 1200px;
     gap: 32px;
   }
 }

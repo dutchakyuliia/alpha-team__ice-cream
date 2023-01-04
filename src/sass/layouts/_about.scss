@@ -241,8 +241,8 @@
   background: var(--color-yellow);
   border-radius: 10px;
 
-  transition-property: background, color, fill, transform;
-  transition-duration: 250ms;
+  transition-property: background, color, fill;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
@@ -258,12 +258,13 @@
   &:hover {
     background: var(--btn-hover-focus);
     transform: background;
+    color: var(--fill-soc-hover-focus);
+    fill: var(--fill-soc-hover-focus);
   }
   &:focus {
     background: var(--btn-hover-focus);
     color: var(--fill-soc-hover-focus);
     fill: var(--fill-soc-hover-focus);
-    transform: background, color, fill;
   }
 }
 .about_icon {

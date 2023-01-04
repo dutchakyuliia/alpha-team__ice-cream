@@ -162,7 +162,7 @@
   }
 }
 .link-map {
-  color: #d6936d;
+  color: #985129;
   font-weight: 500;
   font-size: 12px;
   line-height: 183%;
@@ -205,7 +205,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ababab;
+  color: #8d6917;
   @include tablet {
     font-size: 14px;
   }
@@ -227,12 +227,16 @@
   font-size: 12px;
   line-height: 160%;
   color: #131313;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     font-size: 14px;
     line-height: 150%;
   }
   @include desktop {
     font-size: 16px;
+  }
+  &:hover, &:focus {
+    color: #f8d24e;
   }
 }
 .our-Locations {
@@ -251,19 +255,21 @@
   text-align: center;
   justify-content: center;
   gap: 4px;
-}
-.our-Locations:hover {
-  background: #0a8817;
-}
-.our-Locations:focus {
+  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 500ms cubic-bezier(0.4, 0, 0.2, 1); 
+ &:hover, &:focus {
+  background-color: var(--btn-hover-focus);
   color: #ffff;
+  & .btn-icon {
+  fill: currentColor;
 }
-.our-Locations:focus .btn-icon {
-  fill: #ffff;
 }
-.our-Locations:disabled {
-  background: #ababab;
+
+&:disabled {
+  background-color: #ababab;
+} 
 }
+
 
 .franchise {
   width: 196px;
@@ -281,23 +287,17 @@
   text-align: center;
   justify-content: center;
   gap: 4px;
+  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1), border 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+  border: 2px solid var(--color-white-main);
+  color: var(--color-white-main);
 }
-.franchise:hover {
-  border: 2px solid #0a8817;
+&:disabled {
+  border: 2px solid var(--btn-disabled);
 }
-.franchise:focus {
-  border: 2px solid #0a8817;
-  color: #ffff;
+& .btn-icon {
+  fill: currentColor;
 }
-.franchise:focus .btn-icon {
-  fill: #ffff;
 }
-.franchise:disabled {
-  border: 2px solid #ababab;
-}
-.btn-icon {
-  fill: #000000;
-}
-.btn-icon:focus {
-  fill: #ffff;
-}
+

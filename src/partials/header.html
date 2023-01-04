@@ -9,6 +9,7 @@
           "
           media="(min-width: 1200px)"
           type="image/png"
+          width="60"
         />
         <source
           srcset="
@@ -17,6 +18,7 @@
           "
           media="(min-width: 768px)"
           type="image/png"
+          width="48"
         />
         <source
           srcset="
@@ -25,6 +27,7 @@
           "
           media="(max-width: 767px)"
           type="image/png"
+          width="40"
         />
         <img src="./images/logo/logo-mob-min.png" alt="logo" />
       </picture>
@@ -44,19 +47,12 @@
         <picture>
           <source
             srcset="
-              ./images/logo/logo-desk-min.png    1x,
-              ./images/logo/logo-desk-2x-min.png 2x
-            "
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
-          <source
-            srcset="
               ./images/logo/logo-tab-min.png    1x,
               ./images/logo/logo-tab-2x-min.png 2x
             "
             media="(min-width: 768px)"
             type="image/png"
+            width="48"
           />
           <source
             srcset="
@@ -65,12 +61,17 @@
             "
             media="(max-width: 767px)"
             type="image/png"
+            width="40"
           />
           <img src="./images/logo/logo-mob-min.png" alt="logo" />
         </picture>
       </a>
 
-      <button type="button" class="menu-close js-close-menu" aria-label="Close mobile menu">
+      <button
+        type="button"
+        class="menu-close js-close-menu"
+        aria-label="Close mobile menu"
+      >
         <svg class="menu-icon" width="32" height="32">
           <use href="./images/icons.svg#icon-cross"></use>
         </svg>

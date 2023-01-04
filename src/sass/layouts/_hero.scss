@@ -136,48 +136,35 @@
   }
 }
 
-.hero-bt1 {
-  background-color: var(--bg-green-main);
+.hero-link1 {
+  display: block;
+  background-color: transparent;
   border: 2px solid var(--btn-defaut);
   border-radius: 8px;
   padding: 11px 26px;
-  transition: border 500ms ease-in-out;
-  &:hover {
-    border: 2px solid var(--btn-hover-focus);
+  text-decoration: none;
+  color: var(--color-black-accent);
+  transition: border 500ms ease-in-out, color 600ms ease-in-out;
+  &:hover, &:focus {
+    color: var(--color-white-main);
+    border: 2px solid var(--color-white-main);
   }
-  @include desktop {
-    padding: 12px 34px;
-    &:focus {
-      border: 2px solid var(--btn-hover-focus);
-    }
     &:disabled {
       border: 2px solid var(--btn-disabled);
     }
-  }
-}
-.hero-link1 {
-  text-decoration: none;
-  color: var(--color-black-accent);
   @include desktop {
-    &:focus {
-      color: var(--color-white-main);
-    }
+    padding: 12px 34px;
+   
   }
 }
 
-.hero-bt2 {
-  background-color: var(--bg-green-main);
-  border: none;
-}
 
 .hero-link2 {
   text-decoration-line: underline;
   color: var(--btn-defaut);
   transition: color 500ms ease-in-out;
-  &:hover {
-    color: var(--btn-hover-focus);
-  }
-  &:focus {
+  padding: 11px 11px;
+  &:focus, &:hover {
     color: var(--color-white-main);
   }
   &:disabled {
@@ -321,6 +308,12 @@
 
 .arrow-bt {
   display: block;
+  transform: translateX(0);
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      transform: translateX(25px);
+    }
 }
 
 .arrow-bt-icon {

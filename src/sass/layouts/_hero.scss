@@ -1,12 +1,12 @@
 .hero {
   background-color: var(--bg-green-main);
-  padding-top: 50px;
+  padding-top: 78px;
 
   @include tablet {
-    padding-top: 14px;
+    padding-top: 92px;
   }
   @include desktop {
-    padding-top: 45px;
+    padding-top: 123px;
   }
 }
 

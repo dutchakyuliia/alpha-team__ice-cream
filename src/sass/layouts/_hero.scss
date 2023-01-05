@@ -1,10 +1,6 @@
 .hero {
   background-color: var(--bg-green-main);
-  padding-top: 78px;
-
-  @include tablet {
-    padding-top: 92px;
-  }
+  padding-top: 120px;
   @include desktop {
     padding-top: 150px;
   }
@@ -13,18 +9,14 @@
 .horo-container {
   position: relative;
   padding-bottom: 270px;
-  @include mobile {
-    width: 480px;
-  }
+  
   @media screen and (min-width: 480px) and (max-width: 767px) {
     padding-bottom: 315px;
   }
   @include tablet {
-    width: 768px;
     padding-bottom: 50px;
   }
   @include desktop {
-    width: 1200px;
     padding-bottom: 45px;
   }
 }
@@ -180,8 +172,8 @@
   overflow: hidden;
   bottom: 0px;
   left: 83px;
-  width: 177px;
-  height: 217px;
+  width: 207px;
+  height: 247px;
   background-image: url(../images/hero/ice-mob-min.png);
 
   @include retina {

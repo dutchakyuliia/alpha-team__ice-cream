@@ -1,23 +1,21 @@
 .header {
-  position: relative;
-  @include tablet {
-    background-color: var(--bg-desktop);
-  }
+z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-green-main);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.162);
 }
 
 .header-container {
   display: flex;
-  align-items: flex-end;
-  padding-top: 12px;
-
-  @include tablet {
-    padding-top: 20px;
-  }
-
-  @include desktop {
-    padding-top: 8px;
-  }
+  align-items: center;
 }
+
+.logo-menu {
+  display: block;
+  padding: 8px 0;
+}
+
 
 .button-now,
 .button-buy-now {
@@ -36,18 +34,19 @@
   border-radius: 10px;
   height: 42px;
   width: 152px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), ;
 
   &:hover {
     background-color: var(--btn-hover-focus);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+      color: var(--color-white-accent);
   }
   &:focus {
     background-color: var(--btn-hover-focus);
     color: var(--color-white-accent);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48);
   }
   &:disabled {
     background-color: var(--btn-disabled);
@@ -67,17 +66,12 @@
   }
 }
 .button-buy-now {
-  margin-top: 28px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   animation: changeScale 2000ms infinite;
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    margin-top: 8px;
-  }
   @media screen and (min-width: 1200px) {
-    margin-top: 28px;
     margin-left: auto;
   }
 }
@@ -102,17 +96,6 @@
     transform: scale(1) rotate(0);
   }
 }
-
-// .header__buy-now {
-//   display: none;
-
-//   @include tablet {
-//     display: flex;
-//   }
-//   @include desktop {
-//     margin-left: auto;
-//   }
-// }
 
 .menu-icon {
   fill: currentColor;
@@ -153,23 +136,12 @@
 
 .logo {
   display: block;
-  // @media screen and (min-width: 1200px) {
-  //   margin-right: 308px;
-  // }
 }
 .nav-menu {
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
-// .menu-item {
-//   align-items: center;
-//   margin-bottom: 32px;
-
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .menu-item:last-child {
   margin-bottom: 0;
 }
@@ -233,6 +205,7 @@
 }
 
 .mob-menu {
+  background-color: var(--bg-green-main);
   position: fixed;
   top: 0;
   left: 0;
@@ -240,7 +213,6 @@
   width: 100vw;
   height: 100vh;
   height: 100dvh;
-  background-color: var(--bg-mobile-menu);
   padding-top: 12px;
   padding-bottom: 64px;
   padding-left: 32px;
@@ -256,7 +228,6 @@
   }
 
   @include tablet {
-    background-color: var(--bg-green-main);
     padding-top: 20px;
   }
   @include desktop {
@@ -274,8 +245,8 @@
 
 .header-link {
   font-weight: 700;
-  padding-top: 32px;
-  padding-bottom: 13px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   display: flex;
   align-items: center;

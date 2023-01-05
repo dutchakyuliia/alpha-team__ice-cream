@@ -6,26 +6,26 @@
     padding-top: 92px;
   }
   @include desktop {
-    padding-top: 123px;
+    padding-top: 150px;
   }
 }
 
 .horo-container {
   position: relative;
-  padding-bottom: 236px;
+  padding-bottom: 270px;
   @include mobile {
     width: 480px;
   }
- @media screen and (min-width: 480px) and (max-width: 767px) {
-  padding-bottom: 315px;
- }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 315px;
+  }
   @include tablet {
     width: 768px;
-    padding-bottom: 12px;
+    padding-bottom: 50px;
   }
   @include desktop {
     width: 1200px;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
   }
 }
 
@@ -53,7 +53,7 @@
     font-size: 38px;
     line-height: calc(48 / 38);
     width: 367px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
   }
 }
 .hero-title-decoration {
@@ -118,7 +118,7 @@
     margin-bottom: 12px;
   }
   @include desktop {
-    margin-bottom: 42px;
+    margin-bottom: 70px;
     gap: 32px;
   }
 }
@@ -145,26 +145,26 @@
   text-decoration: none;
   color: var(--color-black-accent);
   transition: border 500ms ease-in-out, color 600ms ease-in-out;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--color-white-main);
     border: 2px solid var(--color-white-main);
   }
-    &:disabled {
-      border: 2px solid var(--btn-disabled);
-    }
+  &:disabled {
+    border: 2px solid var(--btn-disabled);
+  }
   @include desktop {
     padding: 12px 34px;
-   
   }
 }
-
 
 .hero-link2 {
   text-decoration-line: underline;
   color: var(--btn-defaut);
   transition: color 500ms ease-in-out;
   padding: 11px 11px;
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: var(--color-white-main);
   }
   &:disabled {
@@ -184,18 +184,39 @@
   height: 217px;
   background-image: url(../images/hero/ice-mob-min.png);
 
- 
   @include retina {
     background-image: url(../images/hero/ice-mob-2x-min.png);
   }
-
+    @media screen and (min-width: 340px) {
+      left: 93px;
+    }
+  
+    @media screen and (min-width: 350px) {
+      left: 103px;
+    }
+  
+    @media screen and (min-width: 390px) {
+      left: 113px;
+    }
+  
+    @media screen and (min-width: 410px) {
+      left: 118px;
+    }
+  
+    @media screen and (min-width: 440px) {
+      left: 128px;
+    }
+  
+    @media screen and (min-width: 465px) {
+      left: 138px;
+    }
   @include mobile {
     bottom: 0px;
     left: 124.5px;
     width: 265.5px;
     height: 325.5px;
   }
-  
+
   @include tablet {
     bottom: 0px;
     left: 408px;
@@ -230,6 +251,28 @@
   @include retina {
     background-image: url(../images/hero/dots-mob-2x-min.png);
   }
+  @media screen and (min-width: 340px) {
+    left: 10px;
+  }
+  @media screen and (min-width: 350px) {
+    left: 20px;
+  }
+  @media screen and (min-width: 370px) {
+    width: 340px;
+    bottom: 2px;
+  }
+  @media screen and (min-width: 390px) {
+    left: 30px;
+  }
+  @media screen and (min-width: 410px) {
+    left: 35px;
+  }
+  @media screen and (min-width: 440px) {
+    left: 45px;
+  }
+  @media screen and (min-width: 465px) {
+    left: 55px;
+  }
   @include mobile {
     bottom: 0px;
     left: 0px;
@@ -247,7 +290,7 @@
     }
   }
   @include desktop {
-    bottom: 8px;
+    bottom: 25px;
     left: 0px;
     width: 1200px;
     height: 384px;
@@ -268,7 +311,7 @@
   align-items: center;
   gap: 32px;
   @include desktop {
-    gap: 16px;
+    gap: 30px;
   }
 }
 
@@ -299,21 +342,26 @@
   margin-top: 19px;
   margin-bottom: 12px;
   padding: 0;
+  @include tablet {
+    margin-top: 10px;
+    width: 168px;
+  }
   @include desktop {
-    width: 200px;
+    margin-top: 30px;
+    width: 190px;
     font-size: 14px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 .arrow-bt {
   display: block;
   transform: translateX(0);
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      transform: translateX(25px);
-    }
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: translateX(25px);
+  }
 }
 
 .arrow-bt-icon {

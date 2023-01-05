@@ -34,18 +34,19 @@ z-index: 100;
   border-radius: 10px;
   height: 42px;
   width: 152px;
-  transition: color 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), ;
 
   &:hover {
-    background-color: var(--btn-hover-focus);
-    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-      color: var(--color-white-accent);
+    color: var(--color-white-accent);
+    background-color: #f17d09f4;
+    box-shadow: 1px 2px 2px #f8d24e,
+      0 12px 8px #264e15b7;
   }
   &:focus {
-    background-color: var(--btn-hover-focus);
     color: var(--color-white-accent);
+    background-color: var(--btn-hover-focus);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.48);
   }
   &:disabled {

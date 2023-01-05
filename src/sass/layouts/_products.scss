@@ -153,6 +153,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: box-shadow 1500ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  &:hover,
+    &:focus {
+      box-shadow: 1px 2px 8px 2px #1329105a,
+        8px 5px 8px 5px #96793c43;
+    }
   @include tablet {
     padding-top: 108px;
     padding-left: 26px;
@@ -240,20 +246,14 @@
 
 // product-card hover
 .product-card {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     @include desktop {
-      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
       overflow-x: hidden;
       .product-card__title {
-        width: 180px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 8px;
         transform: scale(1.5);
-        box-shadow: 1px 2px 20px 2px #1329105a,
-            8px 5px 15px 5px #96793c43;
       }
     }
   }
